@@ -6,9 +6,11 @@ layout: default
 
 ## Contacts
 
-<a href="mailto"> <i class="fas fa-envelope"></i> </a>
+<a href="mailto"> <i class="fa fa-envelope"></i> </a>
+
 <a href="https://linkedin.com/in/sanvitodavide"> <i class="fa fa-linkedin"></i> </a>
-<a href="https://github.com/DavideSanvito/"> <i class="fab fa-github"></i> </a>
+
+<a href="https://github.com/DavideSanvito/"> <i class="fa fa-github"></i> </a>
 
 ## Publications
 * **FlowBlaze: Stateful Packet Processing in Hardware**<br />
