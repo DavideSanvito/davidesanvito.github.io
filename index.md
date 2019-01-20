@@ -3,17 +3,17 @@ layout: default
 ---
 
 ## Short bio
-I'm a 3rd year Ph.D. candidate in Information Technology in the Department of Electronics, Information and Bioengineerings at [Politecnico di Milano](https://www.polimi.it/), Italy under the supervision of Prof. [Antonio Capone](http://www.antlab.polimi.it/people/antonio-capone). Before starting the Ph.D, I've received the B.S. and M.S. degrees in Telecommunication Engineering from Politecnico di Milano, Italy .
+I'm a 3rd year Ph.D. candidate in Information Technology in the Department of Electronics, Information and Bioengineerings at [Politecnico di Milano](https://www.polimi.it/), Italy under the supervision of Prof. [Antonio Capone](http://www.antlab.polimi.it/people/antonio-capone), where I'm part of the Advanced Network Technologies LABoratory ([ANTLab](http://www.antlab.polimi.it/)) research group.
 
-I'm part of the Advanced Network Technologies LABoratory ([ANTLab](http://www.antlab.polimi.it/)) research group and my research interests are mostly related to Software-Defined Networking with a focus on programmable stateful data planes and Traffic Engineering.
+My research interests are mostly related to Software-Defined Networking with a focus on programmable stateful data planes and Traffic Engineering.
 
 During my Ph.D, I've spent 6 months at [NEC Laboratories Europe](https://www.neclab.eu/) in Heidelberg and 4 months at [Huawei France Research Center](https://www.huawei.com/en/press-events/news/2016/6/Mathematics-Research-Center-in-France) in Paris as an intern.
 
 ## Contacts
-<a href="#" onclick="mailhidepopup=window.open('https://mailhide.io/e/zAclB?compact=true','mailhidepopup',width=580,height=635); return false;"> <i class="fa fa-envelope"></i> </a>
-<a href="https://linkedin.com/in/sanvitodavide"> <i class="fa fa-linkedin"></i> </a>
-<a href="https://github.com/DavideSanvito/"> <i class="fa fa-github"></i> </a>
-<a href="https://scholar.google.it/citations?user=TgCReJwAAAAJ&hl=it"> <i class="fa fa-google-scholar"></i> </a>
+* <a href="#" onclick="mailhidepopup=window.open('https://mailhide.io/e/zAclB?compact=true','mailhidepopup',width=580,height=635); return false;"> <i class="fa fa-envelope"></i> Mail</a>
+* <a href="https://linkedin.com/in/sanvitodavide"> <i class="fa fa-linkedin"></i> LinkedIn</a>
+* <a href="https://github.com/DavideSanvito/"> <i class="fa fa-github"></i> GitHub</a>
+* <a href="https://scholar.google.it/citations?user=TgCReJwAAAAJ&hl=it"> <i class="ai ai-google-scholar-square"></i> Google Scholar</a>
 
 ## Publications
 * **FlowBlaze: Stateful Packet Processing in Hardware**<br />
