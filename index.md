@@ -2,9 +2,13 @@
 layout: default
 ---
 
-<a href="https://linkedin.com/in/sanvitodavide">
-<i class="fa fa-linkedin"></i> LinkedIn
-</a>
+## Short bio
+
+## Contacts
+
+<a href="mailto"> <i class="fas fa-envelope"></i> </a>
+<a href="https://linkedin.com/in/sanvitodavide"> <i class="fa fa-linkedin"></i> </a>
+<a href="https://github.com/DavideSanvito/"> <i class="fab fa-github"></i> </a>
 
 ## Publications
 * **FlowBlaze: Stateful Packet Processing in Hardware**<br />
