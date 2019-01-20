@@ -2,13 +2,9 @@
 layout: default
 ---
 
-{% if site.linkedin_username %}
-  <li>
-    <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
-      <i class="fa fa-linkedin"></i> LinkedIn
-    </a>
-  </li>
-{% endif %}
+<a href="https://linkedin.com/in/sanvitodavide">
+<i class="fa fa-linkedin"></i> LinkedIn
+</a>
 
 ## Publications
 * **FlowBlaze: Stateful Packet Processing in Hardware**<br />
