@@ -52,16 +52,16 @@ In IEEE EWSDN 2015, September 2015
 
 ## Presentations and Demos
 * **Can the Network be the AI Accelerator?**<br />
-ACM SIGCOMM NetCompute 2018 Workshop, August 20, 2018, Budapest
+ACM SIGCOMM NetCompute 2018 Workshop, August 20, Budapest
 * **Adaptive Robust Traffic Engineering in Software Defined Networks**<br />
-IFIP Networking 2018, May 14, 2018, Zurich
+IFIP Networking 2018, May 14, Zurich
 * **The Acceleration of OfSoftSwitch**<br />
-IEEE NFV-SDN 2017, November 7, 2017, Berlin
+IEEE NFV-SDN 2017, November 7, Berlin
 * **Towards Smart Intents with Robust and Flexible Routing**<br />
-ONOS Build 2017, September 20-22, 2017, Seoul
+ONOS Build 2017, September 20-22, Seoul
 * **Passive Classification of Wi-Fi Enabled Devices**<br />
-Italian Networking Workshop 2017, January 11, 2017, Falcade
+Italian Networking Workshop 2017, January 11, Falcade
 * **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees**<br />
-IEEE NetSoft 2016, June 9, 2016, Seoul
+IEEE NetSoft 2016, June 9, Seoul
 * **P4 Implementation of a Stateful Data Plane and its Application to Failure Recovery** [[Poster]](pub/2015-11-P4-2nd-workshop-poster.pdf)<br />
 2nd P4 Workshop, November 18, 2015, Stanford
