@@ -3,7 +3,9 @@ layout: default
 ---
 
 ## Short bio
-I'm a 3rd year Ph.D. candidate in Information Technology in the Department of Electronics, Information and Bioengineerings at [Politecnico di Milano](https://www.polimi.it/), Italy under the supervision of Prof. [Antonio Capone](http://www.antlab.polimi.it/people/antonio-capone), where I'm part of the Advanced Network Technologies LABoratory ([ANTLab](http://www.antlab.polimi.it/)) research group.
+I've received the B.S. and M.S. in Telecommunications Engineering from [Politecnico di Milano](https://www.polimi.it/), Italy.
+
+I'm currently a 3rd year Ph.D. candidate in Information Technology in the Department of Electronics, Information and Bioengineerings at [Politecnico di Milano](https://www.polimi.it/), Italy under the supervision of Prof. [Antonio Capone](http://www.antlab.polimi.it/people/antonio-capone), where I'm part of the Advanced Network Technologies LABoratory ([ANTLab](http://www.antlab.polimi.it/)) research group.
 
 My research interests are mostly related to Software-Defined Networking with a focus on programmable stateful data planes and Traffic Engineering.
 
@@ -50,7 +52,7 @@ In IEEE NetSoft 2016, June 2016
 C. Cascone, L. Pollini, <ins>D. Sanvito</ins>, A. Capone<br />
 In IEEE EWSDN 2015, September 2015
 
-## Presentations and demos
+## Presentations and Demos
 * **Can the Network be the AI Accelerator?**<br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 20, 2018, Budapest
 * **Adaptive Robust Traffic Engineering in Software Defined Networks**<br />
