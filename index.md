@@ -3,9 +3,9 @@ layout: default
 ---
 
 ## Publications
-*   S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, __D. Sanvito__, G. Siracusano, A. Capone, M. Honda, F. Huici, and G. Bianchi\
-**FlowBlaze: Stateful Packet Processing in Hardware**\
-In USENIX NSDI 2019, February 2019
+*   S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, __D. Sanvito__, G. Siracusano, A. Capone, M. Honda, F. Huici, and G. Bianchi
+ **FlowBlaze: Stateful Packet Processing in Hardware**\
+ In USENIX NSDI 2019, February 2019
 *   G. Siracusano, __D. Sanvito__, S. Galea, and R. Bifulco\
 **Deep Learning Inference on Commodity Network Interface Cards**
 In NeurIPS MLSys 2018 Workshop, December 2018
