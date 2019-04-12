@@ -19,9 +19,6 @@ During my Ph.D, I've spent 6 months at [NEC Laboratories Europe](https://www.nec
 * **FlowBlaze: Stateful Packet Processing in Hardware**<br />
 S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, <ins>D. Sanvito</ins>, G. Siracusano, A. Capone, M. Honda, F. Huici, G. Bianchi<br />
 In USENIX NSDI 2019, February 2019
-* **Deep Learning Inference on Commodity Network Interface Cards**<br />
-G. Siracusano, <ins>D. Sanvito</ins>, S. Galea, R. Bifulco<br />
-In NeurIPS MLSys 2018 Workshop, December 2018
 * **Can the Network be the AI Accelerator?**<br />
 <ins>D. Sanvito</ins>, G. Siracusano, R. Bifulco<br />
 In ACM SIGCOMM NetCompute 2018 Workshop, August 2018
