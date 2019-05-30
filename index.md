@@ -16,6 +16,9 @@ During my Ph.D, I've spent 6 months at [NEC Laboratories Europe](https://www.nec
 * <a href="https://scholar.google.it/citations?user=TgCReJwAAAAJ&hl=it"> <i class="ai ai-google-scholar-square"></i> Google Scholar</a>
 
 ## Publications
+* **On Optimization of Semi-stable Routing in Multicommodity Flow Networks**<br />
+A. Tomaszewski, M. Pióro, <ins>D. Sanvito</ins>, I. Filippini, A. Capone<br />
+In INOC 2019, June 2019
 * **FlowBlaze: Stateful Packet Processing in Hardware**<br />
 S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, <ins>D. Sanvito</ins>, G. Siracusano, A. Capone, M. Honda, F. Huici, G. Bianchi<br />
 In USENIX NSDI 2019, February 2019
