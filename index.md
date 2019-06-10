@@ -18,7 +18,7 @@ During my Ph.D, I've spent 6 months at [NEC Laboratories Europe](https://www.nec
 ## Publications
 * **Clustered Robust Routing for Traffic Engineering in Software-Defined Networks**<br />
 <ins>D. Sanvito</ins>, I. Filippini, A. Capone, S. Paris, J. Leguay<br />
-In Elsevier Computer Communications, 2019
+In Elsevier Computer Communications, Vol 144, August 2019
 * **On Optimization of Semi-stable Routing in Multicommodity Flow Networks**<br />
 A. Tomaszewski, M. Pióro, <ins>D. Sanvito</ins>, I. Filippini, A. Capone<br />
 In INOC 2019, June 2019
