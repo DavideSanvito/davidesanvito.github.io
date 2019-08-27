@@ -9,6 +9,9 @@ I'm part of the Advanced Network Technologies LABoratory ([ANTLab](http://www.an
 
 During my Ph.D, I've spent 6 months at [NEC Laboratories Europe](https://www.neclab.eu/) in Heidelberg and 4 months at [Huawei France Research Center](https://www.huawei.com/en/press-events/news/2016/6/Mathematics-Research-Center-in-France) in Paris as an intern.
 
+## Curriculum Vitae
+* <i class="fa fa-file-pdf-o" aria-hidden="true"></i>[Download](cv-sanvito.pdf)
+
 ## Contacts
 * <a href="#" onclick="mailhidepopup=window.open('https://mailhide.io/e/zAclB?compact=true','mailhidepopup',width=580,height=635); return false;"> <i class="fa fa-envelope"></i> Mail</a>
 * <a href="https://linkedin.com/in/sanvitodavide"> <i class="fa fa-linkedin"></i> LinkedIn</a>
