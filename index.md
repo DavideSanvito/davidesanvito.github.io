@@ -77,6 +77,3 @@ Italian Networking Workshop 2017, January 11, Falcade
 IEEE NetSoft 2016, June 9, Seoul
 * **P4 Implementation of a Stateful Data Plane and its Application to Failure Recovery** [[Poster]](pub/2015-11-P4-2nd-workshop-poster.pdf)<br />
 2nd P4 Workshop, November 18, 2015, Stanford
-
-
-2017-10-25-ONOS-TST.pdf
