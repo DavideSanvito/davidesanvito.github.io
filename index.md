@@ -65,11 +65,18 @@ IEEE NetSoft 2018, June 27, Montreal
 IFIP Networking 2018, May 14, Zurich
 * **The Acceleration of OfSoftSwitch** [[Slides]](pub/2017-11-ofsoftswitch.pdf)<br />
 IEEE NFV-SDN 2017, November 7, Berlin
+* **ONOS plug&play optimization and re-routing module** [[Slides]](pub/2017-10-25-ONOS-TST.pdf)<br />
+ONOS Technical Steering Team meeting 2017, October 25, Online
 * **Towards Smart Intents with Robust and Flexible Routing** [[Poster]](pub/2017-09-onos-build-poster.pdf)<br />
 ONOS Build 2017, September 20-22, Seoul
+* **Failure resiliency with stateful data plane** [[Slides]](pub/2017-07-11-SPIDER-Lipari.pdf)<br />
+Lipari School on Network and Computer Sciences 2017, July 11, Lipari
 * **Passive Classification of Wi-Fi Enabled Devices** [[Slides]](pub/2017-01-inw.pdf)<br />
 Italian Networking Workshop 2017, January 11, Falcade
 * **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees** [[Slides]](pub/2016-06-09-netsoft.pdf)<br />
 IEEE NetSoft 2016, June 9, Seoul
 * **P4 Implementation of a Stateful Data Plane and its Application to Failure Recovery** [[Poster]](pub/2015-11-P4-2nd-workshop-poster.pdf)<br />
 2nd P4 Workshop, November 18, 2015, Stanford
+
+
+2017-10-25-ONOS-TST.pdf
