@@ -19,6 +19,9 @@ During my Ph.D, I've spent 6 months at [NEC Laboratories Europe](https://www.nec
 * <a href="https://scholar.google.it/citations?user=TgCReJwAAAAJ&hl=it"> <i class="ai ai-google-scholar-square"></i> Google Scholar</a>
 
 ## Publications
+* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**<br />
+<ins>D. Sanvito</ins>, A. Marchini, I. Filippini, A. Capone<br />
+In IEEE NetSoft 2020, June 2020
 * **Clustered Robust Routing for Traffic Engineering in Software-Defined Networks**<br />
 <ins>D. Sanvito</ins>, I. Filippini, A. Capone, S. Paris, J. Leguay<br />
 In Elsevier Computer Communications, Vol 144, August 2019
