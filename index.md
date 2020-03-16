@@ -21,43 +21,43 @@ During my Ph.D, I've spent 6 months at [NEC Laboratories Europe](https://www.nec
 ## Publications
 * **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**<br />
 <ins>D. Sanvito</ins>, A. Marchini, I. Filippini, A. Capone<br />
-In IEEE NetSoft 2020, June 2020
+IEEE NetSoft 2020, June 2020
 * **Clustered Robust Routing for Traffic Engineering in Software-Defined Networks**<br />
 <ins>D. Sanvito</ins>, I. Filippini, A. Capone, S. Paris, J. Leguay<br />
-In Elsevier Computer Communications, Vol 144, August 2019
+Elsevier Computer Communications, Vol 144, August 2019
 * **On Optimization of Semi-stable Routing in Multicommodity Flow Networks**<br />
 A. Tomaszewski, M. Pióro, <ins>D. Sanvito</ins>, I. Filippini, A. Capone<br />
-In INOC 2019, June 2019
+EURO/ENOG INOC 2019, June 2019
 * **FlowBlaze: Stateful Packet Processing in Hardware**<br />
 S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, <ins>D. Sanvito</ins>, G. Siracusano, A. Capone, M. Honda, F. Huici, G. Bianchi<br />
-In USENIX NSDI 2019, February 2019
+USENIX NSDI 2019, February 2019
 * **Can the Network be the AI Accelerator?**<br />
 <ins>D. Sanvito</ins>, G. Siracusano, R. Bifulco<br />
-In ACM SIGCOMM NetCompute 2018 Workshop, August 2018
+ACM SIGCOMM NetCompute 2018 Workshop, August 2018
 * **ONOS Intent Monitor and Reroute service: enabling plug&play routing logic**<br />
 <ins>D. Sanvito</ins>, D. Moro, M. Gulli, I. Filippini, A. Capone, A. Campanella<br />
-In IEEE NetSoft 2018, June 2018
+IEEE NetSoft 2018, June 2018
 * **Adaptive Robust Traffic Engineering in Software Defined Networks**<br />
 <ins>D. Sanvito</ins>, I. Filippini, A. Capone, S. Paris, J. Leguay<br />
-In IFIP Networking 2018, May 2018
+IFIP Networking 2018, May 2018
 * **The Acceleration of OfSoftSwitch**<br />
 N. Bonelli, G. Procissi, <ins>D. Sanvito</ins>, R. Bifulco<br />
-In IEEE NFV-SDN 2017, November 2017
+IEEE NFV-SDN 2017, November 2017
 * **Towards Traffic Classification Offloading to Stateful SDN Data Planes**<br />
 <ins>D. Sanvito</ins>, D. Moro, A. Capone<br />
-In IEEE NetSoft NEAF-IO 2017 Workshop, July 2017
+IEEE NetSoft NEAF-IO 2017 Workshop, July 2017
 * **Fast failure detection and recover in SDN with stateful data plane**<br />
 C. Cascone, <ins>D. Sanvito</ins>, L. Pollini, A. Capone, B. Sansò<br />
-In Wiley International Journal of Network Management, Vol 27, Issue 2, March/April 2017
+Wiley International Journal of Network Management, Vol 27, Issue 2, March/April 2017
 * **Passive Classification of Wi-Fi Enabled Devices**<br />
 A. E.C. Redondi, <ins>D. Sanvito</ins>, M. Cesana<br />
-In ACM MSWiM 2016, November 2016
+ACM MSWiM 2016, November 2016
 * **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees**<br />
 C. Cascone, L. Pollini, <ins>D. Sanvito</ins>, A. Capone, B. Sansò<br />
-In IEEE NetSoft 2016, June 2016
+IEEE NetSoft 2016, June 2016
 * **Traffic Management Applications for Stateful SDN Data Plane**<br />
 C. Cascone, L. Pollini, <ins>D. Sanvito</ins>, A. Capone<br />
-In IEEE EWSDN 2015, September 2015
+IEEE EWSDN 2015, September 2015
 
 ## Presentations and Demos
 * **Can the Network be the AI Accelerator?** [[Slides]](pub/2018-08-netcompute.pdf)<br />
