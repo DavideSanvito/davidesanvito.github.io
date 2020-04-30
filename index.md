@@ -17,6 +17,11 @@ During my Ph.D, I've spent 4 months at [Huawei France Research Center](https://w
 * <a href="https://scholar.google.it/citations?user=TgCReJwAAAAJ&hl=it"> <i class="ai ai-google-scholar-square"></i> Google Scholar</a>
 
 ## Publications
+
+* **The Road to BOFUSS: The Basic OpenFlow Userspace Software Switch**<br />
+E. L. Fernandes, E. Rojas, Joaquin Alvarez-Horcajo, A. L. Kis, <ins>D. Sanvito</ins>, N. Bonelli, C. Cascone, and C. E.
+Rothenberg<br />
+Elsevier Network and Computer Applications, 2020
 * **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**<br />
 <ins>D. Sanvito</ins>, A. Marchini, I. Filippini, A. Capone<br />
 IEEE NetSoft 2020, June 2020
