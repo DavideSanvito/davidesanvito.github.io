@@ -25,7 +25,7 @@ After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as 
 E. L. Fernandes, E. Rojas, Joaquin Alvarez-Horcajo, A. L. Kis, <ins>D. Sanvito</ins>, N. Bonelli, C. Cascone, and C. E.
 Rothenberg<br />
 Elsevier Journal of Network and Computer Applications, Vol 165, September 2020
-* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers** [[Link]](https://doi.org/10.1016/j.jnca.2020.102685)<br />
+* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**<br />
 <ins>D. Sanvito</ins>, A. Marchini, I. Filippini, A. Capone<br />
 IEEE NetSoft 2020, June 2020
 * **Clustered Robust Routing for Traffic Engineering in Software-Defined Networks** [[Link]](https://doi.org/10.1016/j.comcom.2019.06.002)<br />
@@ -35,7 +35,7 @@ Elsevier Computer Communications, Vol 144, August 2019
 )<br />
 A. Tomaszewski, M. Pióro, <ins>D. Sanvito</ins>, I. Filippini, A. Capone<br />
 EURO/ENOG INOC 2019, June 2019
-* **FlowBlaze: Stateful Packet Processing in Hardware**[[Link]](https://www.usenix.org/system/files/nsdi19-pontarelli.pdf)<br />
+* **FlowBlaze: Stateful Packet Processing in Hardware** [[Link]](https://www.usenix.org/system/files/nsdi19-pontarelli.pdf)<br />
 S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, <ins>D. Sanvito</ins>, G. Siracusano, A. Capone, M. Honda, F. Huici, G. Bianchi<br />
 USENIX NSDI 2019, February 2019
 * **Can the Network be the AI Accelerator?** [[Link]](https://doi.org/10.1145/3229591.3229594)<br />
