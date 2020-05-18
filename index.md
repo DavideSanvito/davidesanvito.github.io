@@ -3,9 +3,12 @@ layout: default
 ---
 
 ## Short bio
-I've received the B.S. and M.S. in Telecommunications Engineering from [Politecnico di Milano](https://www.polimi.it/), Italy, where I obtained my Ph.D. in Information Technology under the supervision of Prof. [Antonio Capone](http://www.antlab.polimi.it/people/antonio-capone) with a thesis on Software-Defined Networking with a focus on programmable stateful data planes and Traffic Engineering.
+I've received the B.S. and M.S. in Telecommunications Engineering from [Politecnico di Milano](https://www.polimi.it/) (Italy), where I obtained my Ph.D. in Information Technology, under the supervision of Prof. [Antonio Capone](http://www.antlab.polimi.it/people/antonio-capone), with a thesis on Software-Defined Networking with a focus on programmable stateful data planes and Traffic Engineering.
 
-During my Ph.D, I've spent 4 months at [Huawei France Research Center](https://www.huawei.com/en/press-events/news/2016/6/Mathematics-Research-Center-in-France) in Paris and 6 months at [NEC Laboratories Europe](https://www.neclab.eu/) in Heidelberg, where I'm currently working as Research Scientist in the Intelligent Software Systems group.
+During my Ph.D, I've spent 6 months at [NEC Laboratories Europe](https://www.neclab.eu/) in Heidelberg and 4 months at [Huawei France Research Center](https://www.huawei.com/en/press-events/news/2016/6/Mathematics-Research-Center-in-France) in Paris.
+
+After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as Research Scientist in the Intelligent Software Systems group and I'm working on computer systems and networks monitoring.
+
 
 ## Curriculum Vitae
 * <i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp; [Download](cv-sanvito.pdf)
