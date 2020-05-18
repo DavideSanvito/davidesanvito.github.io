@@ -24,7 +24,7 @@ After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as 
 * **The Road to BOFUSS: The Basic OpenFlow Userspace Software Switch**<br />
 E. L. Fernandes, E. Rojas, Joaquin Alvarez-Horcajo, A. L. Kis, <ins>D. Sanvito</ins>, N. Bonelli, C. Cascone, and C. E.
 Rothenberg<br />
-Elsevier Network and Computer Applications, 2020
+Elsevier Journal of Network and Computer Applications, Vol 165, September 2020
 * **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**<br />
 <ins>D. Sanvito</ins>, A. Marchini, I. Filippini, A. Capone<br />
 IEEE NetSoft 2020, June 2020
