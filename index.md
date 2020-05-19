@@ -25,7 +25,7 @@ After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as 
 E. L. Fernandes, E. Rojas, Joaquin Alvarez-Horcajo, A. L. Kis, <ins>D. Sanvito</ins>, N. Bonelli, C. Cascone, and C. E.
 Rothenberg<br />
 Elsevier Journal of Network and Computer Applications, Vol 165, September 2020
-* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**<br />
+* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers** <a href="https://davidesanvito.github.io"> <i class="fa fa-file-pdf-o"></i></a><br />
 <ins>D. Sanvito</ins>, A. Marchini, I. Filippini, A. Capone<br />
 IEEE NetSoft 2020, June 2020
 * **Clustered Robust Routing for Traffic Engineering in Software-Defined Networks** [[Link]](https://doi.org/10.1016/j.comcom.2019.06.002)<br />
