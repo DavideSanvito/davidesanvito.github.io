@@ -38,16 +38,16 @@ EURO/ENOG INOC 2019, June 2019
 * **FlowBlaze: Stateful Packet Processing in Hardware** <a href="https://www.usenix.org/system/files/nsdi19-pontarelli.pdf"><i class="far fa-file-pdf"></i></a><br />
 S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, <ins>D. Sanvito</ins>, G. Siracusano, A. Capone, M. Honda, F. Huici, G. Bianchi<br />
 USENIX NSDI 2019, February 2019
-* **Can the Network be the AI Accelerator?** <a href="https://doi.org/10.1145/3229591.3229594"><i class="far fa-file-pdf"></i></a><br />
+* **Can the Network be the AI Accelerator?** <a href="https://doi.org/10.1145/3229591.3229594"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
 <ins>D. Sanvito</ins>, G. Siracusano, R. Bifulco<br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 2018
 * **ONOS Intent Monitor and Reroute service: enabling plug&play routing logic** <a href="https://doi.org/10.1109/NETSOFT.2018.8460064"><i class="far fa-file-pdf"></i></a><br />
 <ins>D. Sanvito</ins>, D. Moro, M. Gulli, I. Filippini, A. Capone, A. Campanella<br />
 IEEE NetSoft 2018, June 2018
-* **Adaptive Robust Traffic Engineering in Software Defined Networks** <a href="https://doi.org/10.23919/IFIPNetworking.2018.8696406"><i class="far fa-file-pdf"></i></a><br />
+* **Adaptive Robust Traffic Engineering in Software Defined Networks** <a href="https://doi.org/10.23919/IFIPNetworking.2018.8696406"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-05-14-ifip.pdf"><i class="far fa-images"></i></a><br />
 <ins>D. Sanvito</ins>, I. Filippini, A. Capone, S. Paris, J. Leguay<br />
 IFIP Networking 2018, May 2018
-* **The Acceleration of OfSoftSwitch** <a href="https://doi.org/10.1109/NFV-SDN.2017.8169842"><i class="far fa-file-pdf"></i></a><br />
+* **The Acceleration of OfSoftSwitch** <a href="https://doi.org/10.1109/NFV-SDN.2017.8169842"><i class="far fa-file-pdf"></i></a> <a href="pub/2017-11-ofsoftswitch.pdf"><i class="far fa-images"></i></a><br />
 N. Bonelli, G. Procissi, <ins>D. Sanvito</ins>, R. Bifulco<br />
 IEEE NFV-SDN 2017, November 2017
 * **Towards Traffic Classification Offloading to Stateful SDN Data Planes** <a href="https://doi.org/10.1109/NETSOFT.2017.8004227"><i class="far fa-file-pdf"></i></a><br />
@@ -59,7 +59,7 @@ Wiley International Journal of Network Management, Vol 27, Issue 2, March/April 
 * **Passive Classification of Wi-Fi Enabled Devices** <a href="https://doi.org/10.1145/2988287.2989161"><i class="far fa-file-pdf"></i></a><br />
 A. E.C. Redondi, <ins>D. Sanvito</ins>, M. Cesana<br />
 ACM MSWiM 2016, November 2016
-* **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees** <a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="far fa-file-pdf"></i></a> <a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="far fa-images"></i></a> <br />
+* **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees** <a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="far fa-file-pdf"></i></a> <a href="pub/2016-06-09-netsoft.pdf"><i class="far fa-images"></i></a> <br />
 C. Cascone, L. Pollini, <ins>D. Sanvito</ins>, A. Capone, B. Sansò<br />
 IEEE NetSoft 2016, June 2016
 * **Traffic Management Applications for Stateful SDN Data Plane** <a href="https://doi.org/10.1109/EWSDN.2015.66"><i class="far fa-file-pdf"></i></a><br />
@@ -67,23 +67,23 @@ C. Cascone, L. Pollini, <ins>D. Sanvito</ins>, A. Capone<br />
 IEEE EWSDN 2015, September 2015
 
 ## Presentations and Demos
-* **Can the Network be the AI Accelerator?** [[Slides]](pub/2018-08-netcompute.pdf)<br />
+* **Can the Network be the AI Accelerator?**  <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 20, Budapest
 * **Enabling external routing logic in ONOS with Intent Monitor and Reroute service** [[Poster]](pub/2018-06-netsoft-poster.pdf)<br />
 IEEE NetSoft 2018, June 27, Montreal
-* **Adaptive Robust Traffic Engineering in Software Defined Networks** [[Slides]](pub/2018-05-14-ifip.pdf)<br />
+* **Adaptive Robust Traffic Engineering in Software Defined Networks** <a href="pub/2018-05-14-ifip.pdf"><i class="far fa-images"></i></a><br />
 IFIP Networking 2018, May 14, Zurich
-* **The Acceleration of OfSoftSwitch** [[Slides]](pub/2017-11-ofsoftswitch.pdf)<br />
+* **The Acceleration of OfSoftSwitch** <a href="pub/2017-11-ofsoftswitch.pdf"><i class="far fa-images"></i></a><br />
 IEEE NFV-SDN 2017, November 7, Berlin
-* **ONOS plug&play optimization and re-routing module** [[Slides]](pub/2017-10-25-ONOS-TST.pdf)<br />
+* **ONOS plug&play optimization and re-routing module** <a href="pub/2017-10-25-ONOS-TST.pdf"><i class="far fa-images"></i></a><br />
 ONOS Technical Steering Team meeting 2017, October 25, Online
 * **Towards Smart Intents with Robust and Flexible Routing** [[Poster]](pub/2017-09-onos-build-poster.pdf)<br />
 ONOS Build 2017, September 20-22, Seoul
-* **Failure resiliency with stateful data plane** [[Slides]](pub/2017-07-11-SPIDER-Lipari.pdf)<br />
+* **Failure resiliency with stateful data plane** <a href="pub/2017-07-11-SPIDER-Lipari.pdf"><i class="far fa-images"></i></a><br />
 Lipari School on Network and Computer Sciences 2017, July 11, Lipari
-* **Passive Classification of Wi-Fi Enabled Devices** [[Slides]](pub/2017-01-inw.pdf)<br />
+* **Passive Classification of Wi-Fi Enabled Devices** <a href="pub/2017-01-inw.pdf"><i class="far fa-images"></i></a><br />
 Italian Networking Workshop 2017, January 11, Falcade
-* **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees** [[Slides]](pub/2016-06-09-netsoft.pdf)<br />
+* **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees** <a href="pub/2016-06-09-netsoft.pdf"><i class="far fa-images"></i></a><br />
 IEEE NetSoft 2016, June 9, Seoul
 * **P4 Implementation of a Stateful Data Plane and its Application to Failure Recovery** [[Poster]](pub/2015-11-P4-2nd-workshop-poster.pdf)<br />
 2nd P4 Workshop, November 18, 2015, Stanford
