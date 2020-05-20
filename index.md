@@ -60,7 +60,7 @@ Wiley International Journal of Network Management, Vol 27, Issue 2, March/April 
 A. E.C. Redondi, <ins>D. Sanvito</ins>, M. Cesana<br />
 ACM MSWiM 2016, November 2016
 * **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees**
-<a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="fa fa-file-pdf-o"></i></a>
+<a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="fas fa-file-pdf"></i></a>
 <a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="fas fa-images"></i></a>
 <a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="far fa-images"></i></a>
 <br />
