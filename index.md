@@ -11,7 +11,7 @@ After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as 
 
 
 ## Curriculum Vitae
-* <i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp; [Download](cv-sanvito.pdf)
+* <i class="far fa-file-pdf" aria-hidden="true"></i>&nbsp; [Download](cv-sanvito.pdf)
 
 ## Contacts
 * <a href="#" onclick="mailhidepopup=window.open('https://mailhide.io/e/zAclB?compact=true','mailhidepopup',width=580,height=635); return false;"> <i class="fa fa-envelope"></i> Mail</a>
@@ -21,52 +21,52 @@ After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as 
 
 ## Publications
 
-* **The Road to BOFUSS: The Basic OpenFlow Userspace Software Switch** <a href="https://doi.org/10.1016/j.jnca.2020.102685"><i class="fa fa-file-pdf-o"></i></a><br />
+* **The Road to BOFUSS: The Basic OpenFlow Userspace Software Switch** <a href="https://doi.org/10.1016/j.jnca.2020.102685"><i class="far fa-file-pdf"></i></a><br />
 E. L. Fernandes, E. Rojas, Joaquin Alvarez-Horcajo, A. L. Kis, <ins>D. Sanvito</ins>, N. Bonelli, C. Cascone, and C. E.
 Rothenberg<br />
 Elsevier Journal of Network and Computer Applications, Vol 165, September 2020
 * **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**<br />
 <ins>D. Sanvito</ins>, A. Marchini, I. Filippini, A. Capone<br />
 IEEE NetSoft 2020, June 2020
-* **Clustered Robust Routing for Traffic Engineering in Software-Defined Networks** <a href="https://doi.org/10.1016/j.comcom.2019.06.002"><i class="fa fa-file-pdf-o"></i></a><br />
+* **Clustered Robust Routing for Traffic Engineering in Software-Defined Networks** <a href="https://doi.org/10.1016/j.comcom.2019.06.002"><i class="far fa-file-pdf"></i></a><br />
 <ins>D. Sanvito</ins>, I. Filippini, A. Capone, S. Paris, J. Leguay<br />
 Elsevier Computer Communications, Vol 144, August 2019
 * **On Optimization of Semi-stable Routing in Multicommodity Flow Networks** <a href="https://doi.org/10.5441/002/inoc.2019.11
-"><i class="fa fa-file-pdf-o"></i></a><br />
+"><i class="far fa-file-pdf"></i></a><br />
 A. Tomaszewski, M. Pióro, <ins>D. Sanvito</ins>, I. Filippini, A. Capone<br />
 EURO/ENOG INOC 2019, June 2019
-* **FlowBlaze: Stateful Packet Processing in Hardware** <a href="https://www.usenix.org/system/files/nsdi19-pontarelli.pdf"><i class="fa fa-file-pdf-o"></i></a><br />
+* **FlowBlaze: Stateful Packet Processing in Hardware** <a href="https://www.usenix.org/system/files/nsdi19-pontarelli.pdf"><i class="far fa-file-pdf"></i></a><br />
 S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, <ins>D. Sanvito</ins>, G. Siracusano, A. Capone, M. Honda, F. Huici, G. Bianchi<br />
 USENIX NSDI 2019, February 2019
-* **Can the Network be the AI Accelerator?** <a href="https://doi.org/10.1145/3229591.3229594"><i class="fa fa-file-pdf-o"></i></a><br />
+* **Can the Network be the AI Accelerator?** <a href="https://doi.org/10.1145/3229591.3229594"><i class="far fa-file-pdf"></i></a><br />
 <ins>D. Sanvito</ins>, G. Siracusano, R. Bifulco<br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 2018
-* **ONOS Intent Monitor and Reroute service: enabling plug&play routing logic** <a href="https://doi.org/10.1109/NETSOFT.2018.8460064"><i class="fa fa-file-pdf-o"></i></a><br />
+* **ONOS Intent Monitor and Reroute service: enabling plug&play routing logic** <a href="https://doi.org/10.1109/NETSOFT.2018.8460064"><i class="far fa-file-pdf"></i></a><br />
 <ins>D. Sanvito</ins>, D. Moro, M. Gulli, I. Filippini, A. Capone, A. Campanella<br />
 IEEE NetSoft 2018, June 2018
-* **Adaptive Robust Traffic Engineering in Software Defined Networks** <a href="https://doi.org/10.23919/IFIPNetworking.2018.8696406"><i class="fa fa-file-pdf-o"></i></a><br />
+* **Adaptive Robust Traffic Engineering in Software Defined Networks** <a href="https://doi.org/10.23919/IFIPNetworking.2018.8696406"><i class="far fa-file-pdf"></i></a><br />
 <ins>D. Sanvito</ins>, I. Filippini, A. Capone, S. Paris, J. Leguay<br />
 IFIP Networking 2018, May 2018
-* **The Acceleration of OfSoftSwitch** <a href="https://doi.org/10.1109/NFV-SDN.2017.8169842"><i class="fa fa-file-pdf-o"></i></a><br />
+* **The Acceleration of OfSoftSwitch** <a href="https://doi.org/10.1109/NFV-SDN.2017.8169842"><i class="far fa-file-pdf"></i></a><br />
 N. Bonelli, G. Procissi, <ins>D. Sanvito</ins>, R. Bifulco<br />
 IEEE NFV-SDN 2017, November 2017
-* **Towards Traffic Classification Offloading to Stateful SDN Data Planes** <a href="https://doi.org/10.1109/NETSOFT.2017.8004227"><i class="fa fa-file-pdf-o"></i></a><br />
+* **Towards Traffic Classification Offloading to Stateful SDN Data Planes** <a href="https://doi.org/10.1109/NETSOFT.2017.8004227"><i class="far fa-file-pdf"></i></a><br />
 <ins>D. Sanvito</ins>, D. Moro, A. Capone<br />
 IEEE NetSoft NEAF-IO 2017 Workshop, July 2017
-* **Fast failure detection and recover in SDN with stateful data plane** <a href="https://doi.org/10.1002/nem.1957"><i class="fa fa-file-pdf-o"></i></a><br />
+* **Fast failure detection and recover in SDN with stateful data plane** <a href="https://doi.org/10.1002/nem.1957"><i class="far fa-file-pdf"></i></a><br />
 C. Cascone, <ins>D. Sanvito</ins>, L. Pollini, A. Capone, B. Sansò<br />
 Wiley International Journal of Network Management, Vol 27, Issue 2, March/April 2017
-* **Passive Classification of Wi-Fi Enabled Devices** <a href="https://doi.org/10.1145/2988287.2989161"><i class="fa fa-file-pdf-o"></i></a><br />
+* **Passive Classification of Wi-Fi Enabled Devices** <a href="https://doi.org/10.1145/2988287.2989161"><i class="far fa-file-pdf"></i></a><br />
 A. E.C. Redondi, <ins>D. Sanvito</ins>, M. Cesana<br />
 ACM MSWiM 2016, November 2016
 * **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees**
-<a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="fas fa-file-pdf"></i></a>
+<a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="far fa-file-pdf"></i></a>
 <a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="fas fa-images"></i></a>
 <a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="far fa-images"></i></a>
 <br />
 C. Cascone, L. Pollini, <ins>D. Sanvito</ins>, A. Capone, B. Sansò<br />
 IEEE NetSoft 2016, June 2016
-* **Traffic Management Applications for Stateful SDN Data Plane** <a href="https://doi.org/10.1109/EWSDN.2015.66"><i class="fa fa-file-pdf-o"></i></a><br />
+* **Traffic Management Applications for Stateful SDN Data Plane** <a href="https://doi.org/10.1109/EWSDN.2015.66"><i class="far fa-file-pdf"></i></a><br />
 C. Cascone, L. Pollini, <ins>D. Sanvito</ins>, A. Capone<br />
 IEEE EWSDN 2015, September 2015
 
