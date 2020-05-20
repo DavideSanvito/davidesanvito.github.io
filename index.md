@@ -59,7 +59,11 @@ Wiley International Journal of Network Management, Vol 27, Issue 2, March/April 
 * **Passive Classification of Wi-Fi Enabled Devices** <a href="https://doi.org/10.1145/2988287.2989161"><i class="fa fa-file-pdf-o"></i></a><br />
 A. E.C. Redondi, <ins>D. Sanvito</ins>, M. Cesana<br />
 ACM MSWiM 2016, November 2016
-* **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees** <a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="fa fa-file-pdf-o"></i></a><br />
+* **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees**
+<a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="fa fa-file-pdf-o"></i></a>
+<a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="fas fa-images"></i></a>
+<a href="https://doi.org/10.1109/NETSOFT.2016.7502425"><i class="far fa-images"></i></a>
+<br />
 C. Cascone, L. Pollini, <ins>D. Sanvito</ins>, A. Capone, B. Sansò<br />
 IEEE NetSoft 2016, June 2016
 * **Traffic Management Applications for Stateful SDN Data Plane** <a href="https://doi.org/10.1109/EWSDN.2015.66"><i class="fa fa-file-pdf-o"></i></a><br />
