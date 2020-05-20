@@ -15,8 +15,8 @@ After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as 
 
 ## Contacts
 * <a href="#" onclick="mailhidepopup=window.open('https://mailhide.io/e/zAclB?compact=true','mailhidepopup',width=580,height=635); return false;"> <i class="fa fa-envelope"></i> Mail</a>
-* <a href="https://linkedin.com/in/sanvitodavide"> <i class="fa fa-linkedin"></i> LinkedIn</a>
-* <a href="https://github.com/DavideSanvito/"> <i class="fa fa-github"></i> GitHub</a>
+* <a href="https://linkedin.com/in/sanvitodavide"> <i class="fab fa-linkedin"></i> LinkedIn</a>
+* <a href="https://github.com/DavideSanvito/"> <i class="fab fa-github"></i> GitHub</a>
 * <a href="https://scholar.google.it/citations?user=TgCReJwAAAAJ&hl=it"> <i class="ai ai-google-scholar-square"></i> Google Scholar</a>
 
 ## Publications
