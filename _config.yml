@@ -1,3 +1,5 @@
 theme: jekyll-theme-leap-day
 title: Davide Sanvito
 show_downloads: false
+github:
+  is_project_page: false
