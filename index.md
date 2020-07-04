@@ -25,7 +25,7 @@ After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as 
 E. L. Fernandes, E. Rojas, Joaquin Alvarez-Horcajo, A. L. Kis, <ins>D. Sanvito</ins>, N. Bonelli, C. Cascone, and C. E.
 Rothenberg<br />
 Elsevier Journal of Network and Computer Applications, Vol 165, September 2020
-* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**<br />
+* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers** <a href="pub/2020-07-CEDRO-netsoft.pdf"><i class="far fa-images"></i></a><br />
 <ins>D. Sanvito</ins>, A. Marchini, I. Filippini, A. Capone<br />
 IEEE NetSoft 2020, June 2020
 * **Clustered Robust Routing for Traffic Engineering in Software-Defined Networks** <a href="https://doi.org/10.1016/j.comcom.2019.06.002"><i class="far fa-file-pdf"></i></a><br />
@@ -67,6 +67,9 @@ C. Cascone, L. Pollini, <ins>D. Sanvito</ins>, A. Capone<br />
 IEEE EWSDN 2015, September 2015
 
 ## Presentations and Demos
+
+* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**  <a href="pub/2020-07-CEDRO-netsoft.pdf"><i class="far fa-images"></i></a><br />
+IEEE NetSoft 2020, July 2, Online
 * **Can the Network be the AI Accelerator?**  <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 20, Budapest
 * **Enabling external routing logic in ONOS with Intent Monitor and Reroute service** [[Poster]](pub/2018-06-netsoft-poster.pdf)<br />
