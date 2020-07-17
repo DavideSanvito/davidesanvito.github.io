@@ -7,7 +7,7 @@ I've received the B.S. and M.S. in Telecommunications Engineering from [Politecn
 
 During my Ph.D, I've spent 6 months at [NEC Laboratories Europe](https://www.neclab.eu/) in Heidelberg and 4 months at [Huawei France Research Center](https://www.huawei.com/en/press-events/news/2016/6/Mathematics-Research-Center-in-France) in Paris.
 
-After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as Research Scientist in the Intelligent Software Systems group and I'm working on computer systems and networks monitoring.
+After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as a Research Scientist in the Intelligent Software Systems group ([ISS](https://www.neclab.eu/research-areas/system-platform-for-iot-and-ai/intelligent-software-system)) and I'm working on computer systems and networks monitoring.
 
 
 ## Curriculum Vitae
@@ -72,7 +72,7 @@ IEEE EWSDN 2015, September 2015
 IEEE NetSoft 2020, July 2, Online
 * **Can the Network be the AI Accelerator?**  <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 20, Budapest
-* **Enabling external routing logic in ONOS with Intent Monitor and Reroute service** [[Poster]](pub/2018-06-netsoft-poster.pdf)<br />
+* **Enabling external routing logic in ONOS with Intent Monitor and Reroute service**  <a href="pub/2018-06-netsoft-poster.pdf"><i class="fas fa-chalkboard-teacher"></i></a><br />
 IEEE NetSoft 2018, June 27, Montreal
 * **Adaptive Robust Traffic Engineering in Software Defined Networks** <a href="pub/2018-05-14-ifip.pdf"><i class="far fa-images"></i></a><br />
 IFIP Networking 2018, May 14, Zurich
@@ -80,7 +80,7 @@ IFIP Networking 2018, May 14, Zurich
 IEEE NFV-SDN 2017, November 7, Berlin
 * **ONOS plug&play optimization and re-routing module** <a href="pub/2017-10-25-ONOS-TST.pdf"><i class="far fa-images"></i></a><br />
 ONOS Technical Steering Team meeting 2017, October 25, Online
-* **Towards Smart Intents with Robust and Flexible Routing** [[Poster]](pub/2017-09-onos-build-poster.pdf)<br />
+* **Towards Smart Intents with Robust and Flexible Routing**  <a href="pub/2017-09-onos-build-poster.pdf"><i class="fas fa-chalkboard-teacher"></i></a><br />
 ONOS Build 2017, September 20-22, Seoul
 * **Failure resiliency with stateful data plane** <a href="pub/2017-07-11-SPIDER-Lipari.pdf"><i class="far fa-images"></i></a><br />
 Lipari School on Network and Computer Sciences 2017, July 11, Lipari
@@ -88,5 +88,5 @@ Lipari School on Network and Computer Sciences 2017, July 11, Lipari
 Italian Networking Workshop 2017, January 11, Falcade
 * **SPIDER: Fault Resilient SDN Pipeline with Recovery Delay Guarantees** <a href="pub/2016-06-09-netsoft.pdf"><i class="far fa-images"></i></a><br />
 IEEE NetSoft 2016, June 9, Seoul
-* **P4 Implementation of a Stateful Data Plane and its Application to Failure Recovery** [[Poster]](pub/2015-11-P4-2nd-workshop-poster.pdf)<br />
+* **P4 Implementation of a Stateful Data Plane and its Application to Failure Recovery**   <a href="pub/2015-11-P4-2nd-workshop-poster.pdf"><i class="fas fa-chalkboard-teacher"></i></a><br />
 2nd P4 Workshop, November 18, 2015, Stanford
