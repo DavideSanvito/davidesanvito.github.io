@@ -38,6 +38,9 @@ EURO/ENOG INOC 2019, June 2019
 * **FlowBlaze: Stateful Packet Processing in Hardware** <a href="https://www.usenix.org/system/files/nsdi19-pontarelli.pdf"><i class="far fa-file-pdf"></i></a><br />
 S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, <ins>D. Sanvito</ins>, G. Siracusano, A. Capone, M. Honda, F. Huici, G. Bianchi<br />
 USENIX NSDI 2019, February 2019
+* **Deep Learning Inference on Commodity Network Interface Cards** <a href="pub/2018-12-mlsys-tonic.pdf"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
+G. Siracusano, <ins>D. Sanvito</ins>, S. Galea, R. Bifulco<br />
+NeurIPS MLSys 2018 Workshop, December 2018
 * **Can the Network be the AI Accelerator?** <a href="https://doi.org/10.1145/3229591.3229594"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
 <ins>D. Sanvito</ins>, G. Siracusano, R. Bifulco<br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 2018
@@ -70,6 +73,8 @@ IEEE EWSDN 2015, September 2015
 
 * **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**  <a href="pub/2020-07-CEDRO-netsoft.pdf"><i class="far fa-images"></i></a><br />
 IEEE NetSoft 2020, July 2, Online
+* **Deep Learning Inference on Commodity Network Interface Cards**  <a href="pub/2018-12-mlsys-tonic-poster.pdf"><i class="fas fa-chalkboard-teacher"></i></a><br />
+NeurIPS MLSys workshop 2018, Dec 7, Montreal
 * **Can the Network be the AI Accelerator?**  <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 20, Budapest
 * **Enabling external routing logic in ONOS with Intent Monitor and Reroute service**  <a href="pub/2018-06-netsoft-poster.pdf"><i class="fas fa-chalkboard-teacher"></i></a><br />
