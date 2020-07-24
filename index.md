@@ -38,13 +38,13 @@ EURO/ENOG INOC 2019, June 2019
 * **FlowBlaze: Stateful Packet Processing in Hardware** <a href="https://www.usenix.org/system/files/nsdi19-pontarelli.pdf"><i class="far fa-file-pdf"></i></a><br />
 S. Pontarelli, R. Bifulco, M. Bonola, C. Cascone, M. Spaziani, V. Bruschi, <ins>D. Sanvito</ins>, G. Siracusano, A. Capone, M. Honda, F. Huici, G. Bianchi<br />
 USENIX NSDI 2019, February 2019
-* **Deep Learning Inference on Commodity Network Interface Cards** <a href="pub/2018-12-mlsys-tonic.pdf"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
+* **Deep Learning Inference on Commodity Network Interface Cards** <a href="pub/2018-12-mlsys-tonic.pdf"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-12-mlsys-tonic-poster.pdf"><i class="fas fa-chalkboard-teacher"></i></a><br />
 G. Siracusano, <ins>D. Sanvito</ins>, S. Galea, R. Bifulco<br />
 NeurIPS MLSys 2018 Workshop, December 2018
 * **Can the Network be the AI Accelerator?** <a href="https://doi.org/10.1145/3229591.3229594"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
 <ins>D. Sanvito</ins>, G. Siracusano, R. Bifulco<br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 2018
-* **ONOS Intent Monitor and Reroute service: enabling plug&play routing logic** <a href="https://doi.org/10.1109/NETSOFT.2018.8460064"><i class="far fa-file-pdf"></i></a><br />
+* **ONOS Intent Monitor and Reroute service: enabling plug&play routing logic** <a href="https://doi.org/10.1109/NETSOFT.2018.8460064"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-06-netsoft-poster.pdf"><i class="fas fa-chalkboard-teacher"></i></a><br />
 <ins>D. Sanvito</ins>, D. Moro, M. Gulli, I. Filippini, A. Capone, A. Campanella<br />
 IEEE NetSoft 2018, June 2018
 * **Adaptive Robust Traffic Engineering in Software Defined Networks** <a href="https://doi.org/10.23919/IFIPNetworking.2018.8696406"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-05-14-ifip.pdf"><i class="far fa-images"></i></a><br />
