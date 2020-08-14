@@ -25,14 +25,13 @@ After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as 
 E. L. Fernandes, E. Rojas, Joaquin Alvarez-Horcajo, A. L. Kis, <ins>D. Sanvito</ins>, N. Bonelli, C. Cascone, and C. E.
 Rothenberg<br />
 Elsevier Journal of Network and Computer Applications, Vol 165, September 2020
-* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers** <a href="pub/2020-07-CEDRO-netsoft.pdf"><i class="far fa-images"></i></a><br />
+* **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers** <a href="https://doi.org/10.1109/NetSoft48620.2020.9165522"><i class="far fa-file-pdf"></i></a> <a href="pub/2020-07-CEDRO-netsoft.pdf"><i class="far fa-images"></i></a><br />
 <ins>D. Sanvito</ins>, A. Marchini, I. Filippini, A. Capone<br />
 IEEE NetSoft 2020, June 2020
 * **Clustered Robust Routing for Traffic Engineering in Software-Defined Networks** <a href="https://doi.org/10.1016/j.comcom.2019.06.002"><i class="far fa-file-pdf"></i></a><br />
 <ins>D. Sanvito</ins>, I. Filippini, A. Capone, S. Paris, J. Leguay<br />
 Elsevier Computer Communications, Vol 144, August 2019
-* **On Optimization of Semi-stable Routing in Multicommodity Flow Networks** <a href="https://doi.org/10.5441/002/inoc.2019.11
-"><i class="far fa-file-pdf"></i></a><br />
+* **On Optimization of Semi-stable Routing in Multicommodity Flow Networks** <a href="https://doi.org/10.5441/002/inoc.2019.11"><i class="far fa-file-pdf"></i></a><br />
 A. Tomaszewski, M. Pióro, <ins>D. Sanvito</ins>, I. Filippini, A. Capone<br />
 EURO/ENOG INOC 2019, June 2019
 * **FlowBlaze: Stateful Packet Processing in Hardware** <a href="https://www.usenix.org/system/files/nsdi19-pontarelli.pdf"><i class="far fa-file-pdf"></i></a><br />
