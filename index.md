@@ -23,7 +23,7 @@ After my Ph.D, I've joined [NEC Laboratories Europe](https://www.neclab.eu/) as 
 
 ### Conference proceedings
 
-* **FlowBlaze.p4: a library for quick prototyping of stateful SDN applications in P4** <a href="https://doi.org"><i class="far fa-file-pdf"></i></a><br />
+* **FlowBlaze.p4: a library for quick prototyping of stateful SDN applications in P4** <a href="https://doi.org"><i class="far fa-file-pdf"></i></a> <a href="pub/2020-10-flowblaze.p4.pdf"><i class="far fa-images"></i></a><br />
 D. Moro, <ins>D. Sanvito</ins>, A. Capone<br />
 IEEE NFV-SDN 2020, November 2020, Online
 * **CEDRO: an in-switch elephant flows rescheduling scheme for data-centers**<font color="red">*</font> <a href="https://doi.org/10.1109/NetSoft48620.2020.9165522"><i class="far fa-file-pdf"></i></a> <a href="pub/2020-07-CEDRO-netsoft.pdf"><i class="far fa-images"></i></a><br />
@@ -41,7 +41,7 @@ NeurIPS MLSys 2018 Workshop, December 2018, Montreal (CA)
 * **Can the Network be the AI Accelerator?**<font color="red">*</font> <a href="https://doi.org/10.1145/3229591.3229594"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-08-netcompute.pdf"><i class="far fa-images"></i></a><br />
 <ins>D. Sanvito</ins>, G. Siracusano, R. Bifulco<br />
 ACM SIGCOMM NetCompute 2018 Workshop, August 2018, Budapest (HU)
-* **ONOS Intent Monitor and Reroute service: enabling plug&play routing logic** <a href="https://doi.org/10.1109/NETSOFT.2018.8460064"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-06-netsoft.pdf"><i class="far fa-images"></i></a> <a href="pub/2018-06-netsoft-poster.pdf"><i class="fas fa-chalkboard-teacher"></i></a><br />
+* **ONOS Intent Monitor and Reroute service: enabling plug&play routing logic** <a href="https://doi.org/10.1109/NETSOFT.2018.8460064"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-06-netsoft.pdf"><i class="far fa-images"></i></a><br />
 <ins>D. Sanvito</ins>, D. Moro, M. Gulli, I. Filippini, A. Capone, A. Campanella<br />
 IEEE NetSoft 2018, June 2018, Montreal (CA)
 * **Adaptive Robust Traffic Engineering in Software Defined Networks**<font color="red">*</font> <a href="https://doi.org/10.23919/IFIPNetworking.2018.8696406"><i class="far fa-file-pdf"></i></a> <a href="pub/2018-05-14-ifip.pdf"><i class="far fa-images"></i></a><br />
@@ -65,6 +65,9 @@ IEEE EWSDN 2015, September 2015, Bilbao (ES)
 
 ### Journal papers
 
+* **An efficient approach to optimization of semi-stable routing in multicommodity flow networks** <a href="https://doi.org/10.1002/net.21999"><i class="far fa-file-pdf"></i></a><br />
+A. Tomaszewski, M. Pióro, <ins>D. Sanvito</ins>, I. Filippini, A. Capone<br />
+Wiley Networks
 * **The Road to BOFUSS: The Basic OpenFlow Userspace Software Switch** <a href="https://doi.org/10.1016/j.jnca.2020.102685"><i class="far fa-file-pdf"></i></a><br />
 E. L. Fernandes, E. Rojas, Joaquin Alvarez-Horcajo, A. L. Kis, <ins>D. Sanvito</ins>, N. Bonelli, C. Cascone, and C. E.
 Rothenberg<br />
@@ -78,7 +81,7 @@ Wiley International Journal of Network Management, Vol 27, Issue 2, March/April 
 
 ### Demos, posters and misc
 
-* **Developing EFSM-based stateful applications with FlowBlaze.p4 and ONOS**<br />
+* **Developing EFSM-based stateful applications with FlowBlaze.p4 and ONOS** <a href="https://doi.org/10.1145/3426744.3431324"><i class="far fa-file-pdf"></i></a><br />
 D. Moro, <ins>D. Sanvito</ins>, A. Capone<br />
 ACM CoNEXT EuroP4 2020 Workshop, December 2020
 * **Demonstrating FlowBlaze.p4: fast prototyping for EFSM-based data plane applications**<br />
