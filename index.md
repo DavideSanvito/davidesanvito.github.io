@@ -84,7 +84,7 @@ Wiley International Journal of Network Management, Vol 27, Issue 2, March/April 
 * **Developing EFSM-based stateful applications with FlowBlaze.p4 and ONOS** <a href="https://doi.org/10.1145/3426744.3431324"><i class="far fa-file-pdf"></i></a><br />
 D. Moro, <ins>D. Sanvito</ins>, A. Capone<br />
 ACM CoNEXT EuroP4 2020 Workshop, December 2020
-* **Demonstrating FlowBlaze.p4: fast prototyping for EFSM-based data plane applications**<br />
+* **Demonstrating FlowBlaze.p4: fast prototyping for EFSM-based data plane applications** <font color="red"><i>Best Demo Award</i></font><br />
 D. Moro, <ins>D. Sanvito</ins>, A. Capone<br />
 IEEE NFV-SDN 2020, November 2020
 * **Enabling external routing logic in ONOS with Intent Monitor and Reroute service** <a href="pub/2018-06-netsoft-poster.pdf"><i class="fas fa-chalkboard-teacher"></i></a><br />
