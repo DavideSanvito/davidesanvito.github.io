@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+        <title>CTDB Tools - Davide Sanvito</title>
+        <meta name="generator" content="Jekyll v3.9.0" />
+        <meta property="og:title" content="Davide Sanvito" />
+        <meta property="og:locale" content="en_US" />
+        <link rel="canonical" href="https://davidesanvito.github.io/" />
+        <meta property="og:url" content="https://davidesanvito.github.io/" />
+        <meta property="og:site_name" content="Davide Sanvito" />
+        <script async="" src="assets/analytics.js"></script>
+        <script type="application/ld+json">
+            { "@type": "WebSite", "headline": "Short bio", "url": "https://davidesanvito.github.io/", "name": "Davide Sanvito", "@context": "https://schema.org" }
+        </script>
+        <!-- End Jekyll SEO tag -->
+
+        <link rel="stylesheet" href="assets/style.css" />
+        <script src="assets/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+        <script src="assets/main.js"></script>
+        <!--[if lt IE 9]>
+            <script src="assets/https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.990.0" data-gr-ext-installed="">
+        <header>
+            <h1>CTDB Tools</h1>
+        </header>
+
+        <div id="banner">
+            <span id="logo"></span>
+        </div>
+
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li class="tag-h2 active"><a href="index.html">Indietro</a></li>
+                </ul>
+            </nav>
+
+            <section style="height: auto;">
+
+                <p>
+                    Come proiezionista al <a href="https://www.cineteatrodonbosco.net">CineTeatro Don Bosco</a> mi sono occupato principalmente della proiezione dei film e della preparazione delle playlist nel Theater Management System (ovvero della predisposizione del film insieme ai trailer e della configurazione degli automatismi delle luci e del suono).
+					<br>I <b>CTDB Tools</b> sono un insieme di strumenti che ho sviluppato per supportare e automatizzare alcuni operazioni prima, durante e al termine della proiezione stessa.
+                </p>
+
+                <h3>Digital Cinema</h3>
+
+                <img src="imgs/film-roll.png" class="TextWrapLX" />
+                <p>
+					La Digital Cinema Initiatives (DCI) è un'associazione dei maggiori studi cinematografici di Hollywood creata agli inizi degli anni 2000 e il cui obiettivo è la standardizzazione dei sistemi per il cinema digitale.
+					Negli ultimi anni la pellicola 35mm è stata progressivamente sostituita dal Digital Cinema Package (DCP), una collezione di file che include tracce audio e video insieme ad altri file ausiliari.
+					I DCP sono tipicamente distribuiti ai diversi cinema utilizzando connessioni satellitari o spediti tramite hard disk.
+					Per poter fornire un certo livello di sicurezza (ad es. impedire proiezioni non autorizzate e copie illegali dei film), i DCP sono cifrati: ciascun cinema necessita di una Key Delivery Message (KDM), un file speciale, fornito dal distributore, che contiene il materiale crittografico che permette ad uno specifico Theater Management System (TMS) di ottenere le chiavi di decifratura di un certo DCP per sbloccarne la riproduzione in una finestra temporale pre-definita.
+					Maggiori informazioni sul Digital Cinema possono essere trovate <a target="_blank" href="https://cinepedia.com">qui</a>.
+                </p>
+
+                <h3>Prima della proiezione</h3>
+
+                <img src="imgs/truck.png" class="TextWrapLX" />
+                <p>
+					All'inizio di ogni settimana un corriere recapita un insieme di hard disk contenenti i DCP relativi le proiezioni previste per il weekend.
+					Il primo passo per la creazione di una playlist è l'<i>ingest</i>, ovvero la copia di tutti i DCP dagli hard disk al TMS.
+					Dato che ciascun DCP occupa qualche centinaio di GB, l'ingest può durare diverse ore in tutto e potrebbe essere molto utile verificarne lo stato da remoto.
+                    <img src="imgs/bot.jpg" class="TextWrapRX" alt="Telegram Bot" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+
+                    Il <i>TMS server</i> non è direttamente connesso a Internet, però può essere raggiunto da un computer dual-homed, <i>PC TR</i>, che normalmente utilizziamo per gestire le KDM e i trailer. Per evitare di tener accesso <i>PC TR</i> 24 ore su 24, il primo tool che ho sviluppato è un Telegram Bot (<b>CTDB Bot</b>), in esecuzione su un Raspberry PI, che permette di verificare da remoto lo stato di <i>PC TR</i> e di accenderlo attraverso il Wake-on-LAN (WOL).
+					All'accensione, <i>PC TR</i> notifica l'utente attraverso Telegram così da potersi collegare via TeamViewer e infine accedere al <i>TMS server</i> via VNC.<br>
+                    <a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Mostra più dettagli]</a>
+                    <span style="display: none;">
+						Il Telegram Bot è in esecuzione su un Raspberry PI ed è implementato in Python tramite il modulo <i>python-telegram-bot</i>.
+						Il Bot invia il magick packet per il WOL tramite <i>etherwake</i> e permette di verificare lo stato di <i>PC TR</i> con <i>nmap</i>.
+						<a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Nascondi dettagli]</a>
+                    </span>
+                </p>
+
+                <img src="imgs/key.png" class="TextWrapLX" />
+                <p>
+					Qualche giorno prima della prima proiezione di un film, il distributore invia le KDM via email.
+					Ogni KDM viene ingestata nel <i>TMS server</i> per sbloccare il film corrispondente e abilitare la riproduzione della playlist.
+                    <img src="imgs/KDM_check.PNG" class="TextWrapRX" alt="KDM Check" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+					Potrebbe succedere che una KDM contenga informazioni parzialmente errate.
+					Dato che solo il distributore è in grado di fornire la nuova KDM, è molto importante poter verificarne le informazioni rapidamente. 
+					Ho sviluppato un tool (<b>KDM Check</b>), eseguibile da <i>PC TR</i>, per automatizzare il processo di verifica.<br>
+                    <a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Mostra più dettagli]</a>
+                    <span style="display: none;">
+						Il tool è implementato in Python e viene eseguito su <i>PC TR</i>.
+						All'avvio, il programma scarica le email degli ultimi 7 giorni via IMAP insieme a tutti gli allegati XML e ZIP e li scompatta.
+						Si collega poi al database del nostro sito Internet per scaricare gli ultimi film in programma (titolo e orari della prima ed ultima proiezione).
+						Analizza quindi le KDM come file XML per estrarre le seguenti informazioni: il titolo del contenuto cifrato, la finestra di validità e il dispositivo per il quale è stata generata.
+						Infine verifica automaticamente per ogni film in programma che (1) il numero di serie del nostro TMS appaia nella KDM, (2) la prima ed ultima proiezione cadano all'interno della finestra di validità della KDM e (3) ci sia una corrispondenza tra il titolo del contenuto cifrato e quello del film.
+						Per quest'ultima verifica il programma scarica da Wikipedia e IMDB il titolo originale del film perchè spesso il nome del film viene riportato all'interno del nome del DCP in lingua originale, mentre il nostro sito presenta sempre il titolo tradotto in italiano.
+						Ad esempio, come si vede nell'immagine, il titolo del DCP sbloccato dalla KDM per il film <i>"Il Grande Gigante Gentile"</i> contiene <i>BFG</i> e infatti il titolo originale del film è <i>"The BFG"</i>. 
+						Se tutti i controlli hanno esito positivo, la KDM è pronta per essere ingestata nel TMS. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Nascondi dettagli]</a>
+                    </span>
+                </p>
+
+                <img src="imgs/popcorn.png" class="TextWrapLX" />
+                <p>
+					Prima dell'era del cinema digitale, specialmente nei cinema più piccoli, la proiezione del film veniva spesso interrotta a metà da un intervallo per permettere al proiezionista di cambiare la bobina della pellicola caricando sulla macchina da proiezione il secondo tempo.
+					Al giorno d'oggi diversi cinema hanno mantenuto questa pratica per permettere ancora agli spettatori di fare una breve pausa e accedere al bar.
+					In teoria il documento tecnico fornito insieme all'hard disk potrebbe contenere un suggerimento sul momento migliore per inserire l'intervallo, ma nella pratica questo accade raramente.
+					<img src="imgs/interval_finder.png" class="TextWrapRX" alt="Interval finder" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+                    Per alcune ragioni pratiche (ad esempio per poter riutilizzare parti di un DCP o per trasferire un DCP usando un supporto con limiti sulla dimensione dei file) un DCP potrebbe essere giá suddiviso in sottosezioni, chiamate rulli (<i>reels</i>), che solitamente iniziano con un cambio scena (caratteristica comune ai vecchi rulli della pellicola).
+					Ho sviluppato un tool (<b>Interval Finder</b>) per estrarre le informazioni sui rulli dai DCP e fornire automaticamente un suggerimento sulla migliore tempistica per l'intervallo.<br>
+                    <a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Mostra più dettagli]</a>
+                    <span style="display: none;">
+						Il tool é implementato in Python e dev'essere eseguito sul <i>TMS server</i> per poter aver accesso ai file XML dei DCP ingestati.
+						Analizzando i file XML il tool estrae tutte le informazioni sui rulli e suggerisce come miglior tempo per l'intervallo l'istante di inizio del rullo piú vicino alla metá esatta del film.
+						Questi tempo puó infine essere utilizzate per configurare gli automatismi del TSM (pausa della riproduzione e accensione luci in sala) durante la creazione della playlist.
+						<a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Nascondi dettagli]</a>
+                    </span>
+                </p>
+				
+                <h3>Durante la proiezione</h3>
+
+                <img src="imgs/clock.png" class="TextWrapLX" />
+                <p>
+					Prima dell'inizio della proiezione potrebbe essere utile mostrare agli spettatori (e specialmente ai loro genitori!) una stima dell'orario di termine della proiezione.
+                    <img src="imgs/orario_cassa.png" class="TextWrapRX" alt="Ticket Office Display" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+					La durata stessa del film non fornisce un'informazione sufficiente a causa di diverse incertezze sull'inizio della proiezione e sulle durate dei trailer e dell'intervallo.
+					Ho sviluppato un tool (<b>Ticket Office Display</b>) per calcolare questa informazione direttamente dal TMS e mostrarla in cassa su un grande schermo.
+                    <a style="cursor: pointer;" onclick="$(this).hide(); $(this).parent().next().show()"><br>[Mostra più dettagli]</a>
+                    <div style="display: none;"> Tre sorgenti di incertezza ci impediscono di sommare semplicemente la durata del film T<sub>len</sub> all'inizio del film da programma T<sub>sched</sub>.
+					Prima di tutto, a seconda della quantitá di persone in fila in cassa, l'inizio della proiezione potrebbe essere leggermente ritardato.
+					In secondo luogo, i trailer mostrati prima del film (seguiti a volte da una breve introduzione di un critico), posticipano ulteriormente l'inizio del film.
+					Infine, l'intervallo in mezzo al film ha una durata variabile a seconda della fila al bar che dipende a sua volta dall'orario della proiezione (diversi spettacoli sono rivolti a diversi tipi di spettatori e con diversa affluenza).<br>
+					Ho sviluppato un sistema per fornire tre diverse stime sul termine della proiezione con un livello di accuratezza crescente.
+					Il back-end, sviluppato in Python, é in esecuzione su un Raspberry PI, mentre il front-end é sviluppato in PHP e combina le informazioni fornite dal nostro sito web con quelle del back-end per mostrare in cassa in ogni momento la miglior stima disponibile.
+					<center><img src="imgs/orario_cassa_schema.png" style="width: 75%; cursor: zoom-in" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)"></center>
+					<i><b>Prima stima:</b></i> questa misura, mostrata prima dell'inizio del film fino a 20 minuti dopo l'orario di inizio previsto, é ottenuta a partire dall'orario di inizio previsto sommando la durata del film (ricavata dal nostro sito web) e la durata media dell'intervallo per il particolare orario della proiezione (ad es. sabato sera o domenica pomeriggio).
+					<br><i><b>Seconda stima:</b></i> ogni notte un <i>cron</i> job in esecuzione sul Raspberry PI scarica dal nostro sito web le proiezioni previste per la giornata e programma il lancio dello script di back-end 20 minuti dopo l'inizio previsto per la proiezione.
+					A quel punto possiamo essere certi che sia i trailer che l'introduzione del critico sono conclusi e possiamo quindi calcolare il vero inizio della proiezione.
+					Il problema é che il nostro TMS non fornisce alcuna interfaccia per leggere il timestamp del contenuto in riproduzione.
+					Lo script quindi estrae questa informazione connettendosi al TMS via VNC, facendo uno screenshot della GUI del TMS, ritagliando l'immagine e applicando infine una tecnica di Optical Character Recognition (OCR) tramite <i>tesseract-ocr</i>.
+					Dal timestamp letto possiamo quindi ricostruire l'inizio effettivo della proiezione e fornire una miglior stima del termine della proiezione.
+					<br><i><b>Terza stima:</b></i> a partire dall'inizio previsto per la proiezione, il sistema attenda che sia trascorso il 75% della durate del film ed estrae nuovamente il timestamp come al passo precedente.
+					A questo punto il sistema conosce anche la durata esatta dell'intervallo ed é in grado di compensarne l'effetto per fornire la stima finale del termine della proiezione.
+					<br> NB la durata dell'intervallo estratta nell'ultimo passo viene anche utilizzata per aggiornare la durata media dell'intervallo in modo che, man mano che il sistema viene eseguito nel tempo, l'accuratezza delle prime due stime diventi sempre piú affidabile. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $('a').eq($('a').index($(this)) - 1)
+.show()">[Nascondi dettagli]</a>
+                    </div>
+                </p>
+				
+                <h3>Al termine della proiezione</h3>
+				https://www.electronicshub.org/control-a-relay-using-raspberry-pi/
+                <img src="imgs/idea.png" class="TextWrapLX" />
+                <p>
+					Al termine del film, mentre vengono mostrati i titoli di coda, dobbiamo accendere le luci in sala e quest'ultima operazione puó essere automatizzata direttamente nella playlist del TMS fornendo l'esatto istante temporale.
+					<img src="imgs/lights2.jpg" class="TextWrapRX" alt="Telegram Bot - CTDB Lights" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+					Questo timestamp, chiamato <i>Credits Offset</i>, viene talvolta riportato nel documento fornito insieme all'hard disk, ma non sempre questo succede.
+					Ho sviluppato un tool (<b>CTDB Lights</b>) per accendere e spegnere manualmente, anche da remoto, le luci di sala utilizzato le porte GPIO sul Raspberry PI implementando un sistema complementare alle porte GPIO del TMS.<br>
+                    <a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Mostra più dettagli]</a>
+                    <span style="display: none;">
+						Il tool é stato implementato in Python come un server HTTP interfacciato con le porte GPIO tramite il modulo <i>RPi.GPIO</i>.
+						Il servizio CTDB Lights é una web-app accessibile da un qualsiasi computer connesso alla stessa LAN, rendendo il sistema di controllo luci utilizzabile anche durante gli spettacoli teatrali.
+						Ho anche implementato un'applicazione Android che rende il server HTTP accessibile anche al di fuori della LAN tramite SSH local port forwarding usando il Raspberry PI come jump server.
+						Infine, il servizio é anche accessibile direttamente tramite il Telegram Bot. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Nascondi dettagli]</a>
+                    </span>
+                </p>
+
+            </section>
+            <footer>
+                <p>
+                    <small>Hosted on GitHub Pages.<br>Theme by <a href="https://twitter.com/michigangraham">mattgraham</a>.<br>Icons from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>.</div></small>
+                </p>
+            </footer>
+        </div>
+
+        <div class="modal" id="imgPreview" onclick="$(this).hide()">
+            <span class="close" onclick="$(this).parent().hide()">&times;</span>
+            <img class="modal-content" id="zoomedImg" />
+            <div id="zoomedImgCap"></div>
+        </div>
+
+        <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-170092763-1', 'auto');
+		ga('send', 'pageview');
+        </script>
+    </body>
+</html>
