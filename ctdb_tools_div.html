@@ -31,10 +31,10 @@
 <p>
 	Few days before the show, the distributor provides the KDMs by email.
 	Each KDM has to be ingested into the <i>TMS server</i> to unlock the corresponding movie and enable the playback of its playlist.
-	<img src="imgs/KDM_check.PNG" class="TextWrapRX" alt="KDM Check" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+	<img src="imgs/KDM_check.PNG" class="TextWrapRX" alt="KDM Validator" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 	It might happen that a KDM is partially incorrect.
 	Given that a new KDM can only be issued by the distributor, it is essential to timely verify it.
-	I developed a tool (<b>KDM Check</b>), running on <i>PC TR</i>, to automate this verification process.<br>
+	I developed a tool (<b>KDM Validator</b>), running on <i>PC TR</i>, to automate this verification process.<br>
 	<a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Show more details]</a>
 	<span style="display: none;">
 		The tool has been implemented in Python and runs on <i>PC TR</i>.
@@ -52,9 +52,9 @@
 <p>
 	Before the Digital Cinema era, the projection of a movie, especially in smaller cinemas, used to be splitted in two parts by an interval (or intermission) whose purpose was to allow projectionists to change out film reels. Nowadays several cinemas preserved this practice to
 	let the audience have a short break and access the snack bar. In principle the information about the suggested break time might be reported in the techcnical document provided with the hard drive, but this rarely happens in practice.
-	<img src="imgs/interval_finder.png" class="TextWrapRX" alt="Interval finder" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+	<img src="imgs/interval_finder.png" class="TextWrapRX" alt="DCP Interval finder" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 	For some practical reasons (e.g. re-using parts of a DCP or transferring a DCP with storage that have file size limits), a DCP can be provided already splitted in subsections, still called <i>reels</i>, which typically starts with a scene change, as it used to be for film's reels.
-	I developed a tool (<b>Interval Finder</b>) to retrieve this information from the DCP and automatically provide a suggestion for the intermission time.<br>
+	I developed a tool (<b>DCP Interval Finder</b>) to retrieve this information from the DCP and automatically provide a suggestion for the intermission time.<br>
 	<a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Show more details]</a>
 	<span style="display: none;">
 		The tool has been implemented in Python and needs to be run on the <i>TMS server</i> in order to be able to access the XML files included in the ingested DCPs. By analyzing the XML file it extracts all the

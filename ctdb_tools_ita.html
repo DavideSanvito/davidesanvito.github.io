@@ -45,8 +45,8 @@
             <section style="height: auto;">
 
                 <p>
-                    Come proiezionista al <a href="https://www.cineteatrodonbosco.net">CineTeatro Don Bosco</a> mi sono occupato principalmente della proiezione dei film e della preparazione delle playlist nel Theater Management System (ovvero della predisposizione del film insieme ai trailer e della configurazione degli automatismi delle luci e del suono).
-					<br>I <b>CTDB Tools</b> sono un insieme di strumenti che ho sviluppato per supportare e automatizzare alcuni operazioni prima, durante e al termine della proiezione stessa.
+                    Come proiezionista al <a href="https://www.cineteatrodonbosco.net">CineTeatro Don Bosco</a> mi sono occupato principalmente della proiezione dei film e della preparazione delle playlist attraverso il Theater Management System (ovvero della predisposizione del film insieme ai trailer e della configurazione degli automatismi delle luci e del suono).
+					<br>I <b>CTDB Tools</b> sono un insieme di strumenti che ho sviluppato per supportare e automatizzare alcune operazioni prima, durante e al termine della proiezione stessa.
                 </p>
 
                 <h3>Digital Cinema</h3>
@@ -56,7 +56,7 @@
 					La Digital Cinema Initiatives (DCI) è un'associazione dei maggiori studi cinematografici di Hollywood creata agli inizi degli anni 2000 e il cui obiettivo è la standardizzazione dei sistemi per il cinema digitale.
 					Negli ultimi anni la pellicola 35mm è stata progressivamente sostituita dal Digital Cinema Package (DCP), una collezione di file che include tracce audio e video insieme ad altri file ausiliari.
 					I DCP sono tipicamente distribuiti ai diversi cinema utilizzando connessioni satellitari o spediti tramite hard disk.
-					Per poter fornire un certo livello di sicurezza (ad es. impedire proiezioni non autorizzate e copie illegali dei film), i DCP sono cifrati: ciascun cinema necessita di una Key Delivery Message (KDM), un file speciale, fornito dal distributore, che contiene il materiale crittografico che permette ad uno specifico Theater Management System (TMS) di ottenere le chiavi di decifratura di un certo DCP per sbloccarne la riproduzione in una finestra temporale pre-definita.
+					Per poter fornire un certo livello di sicurezza (ad es. impedire proiezioni non autorizzate e copie illegali dei film), i DCP sono cifrati: ciascun cinema necessita di una Key Delivery Message (KDM), un piccolo file, fornito dal distributore, che contiene il materiale crittografico che permette ad uno specifico Theater Management System (TMS) di estrarre le chiavi di decifratura di un certo DCP per sbloccarne la riproduzione in una finestra temporale pre-definita.
 					Maggiori informazioni sul Digital Cinema possono essere trovate <a target="_blank" href="https://cinepedia.com">qui</a>.
                 </p>
 
@@ -64,7 +64,7 @@
 
                 <img src="imgs/truck.png" class="TextWrapLX" />
                 <p>
-					All'inizio di ogni settimana un corriere recapita un insieme di hard disk contenenti i DCP relativi le proiezioni previste per il weekend.
+					All'inizio di ogni settimana un corriere recapita un insieme di hard disk contenenti i DCP relativi alle proiezioni previste per il weekend.
 					Il primo passo per la creazione di una playlist è l'<i>ingest</i>, ovvero la copia di tutti i DCP dagli hard disk al TMS.
 					Dato che ciascun DCP occupa qualche centinaio di GB, l'ingest può durare diverse ore in tutto e potrebbe essere molto utile verificarne lo stato da remoto.
                     <img src="imgs/bot.jpg" class="TextWrapRX" alt="Telegram Bot" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
@@ -74,7 +74,7 @@
                     <a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Mostra più dettagli]</a>
                     <span style="display: none;">
 						Il Telegram Bot è in esecuzione su un Raspberry PI ed è implementato in Python tramite il modulo <i>python-telegram-bot</i>.
-						Il Bot invia il magick packet per il WOL tramite <i>etherwake</i> e permette di verificare lo stato di <i>PC TR</i> con <i>nmap</i>.
+						Il Bot invia il magic packet per il WOL tramite <i>etherwake</i> e permette di verificare lo stato di <i>PC TR</i> utilizzando <i>nmap</i>.
 						<a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Nascondi dettagli]</a>
                     </span>
                 </p>
@@ -83,10 +83,10 @@
                 <p>
 					Qualche giorno prima della prima proiezione di un film, il distributore invia le KDM via email.
 					Ogni KDM viene ingestata nel <i>TMS server</i> per sbloccare il film corrispondente e abilitare la riproduzione della playlist.
-                    <img src="imgs/KDM_check.PNG" class="TextWrapRX" alt="KDM Check" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+                    <img src="imgs/KDM_check.PNG" class="TextWrapRX" alt="KDM Validator" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 					Potrebbe succedere che una KDM contenga informazioni parzialmente errate.
 					Dato che solo il distributore è in grado di fornire la nuova KDM, è molto importante poter verificarne le informazioni rapidamente. 
-					Ho sviluppato un tool (<b>KDM Check</b>), eseguibile da <i>PC TR</i>, per automatizzare il processo di verifica.<br>
+					Ho sviluppato un tool (<b>KDM Validator</b>), eseguibile da <i>PC TR</i>, per automatizzare il processo di verifica.<br>
                     <a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Mostra più dettagli]</a>
                     <span style="display: none;">
 						Il tool è implementato in Python e viene eseguito su <i>PC TR</i>.
@@ -95,7 +95,7 @@
 						Analizza quindi le KDM come file XML per estrarre le seguenti informazioni: il titolo del contenuto cifrato, la finestra di validità e il dispositivo per il quale è stata generata.
 						Infine verifica automaticamente per ogni film in programma che (1) il numero di serie del nostro TMS appaia nella KDM, (2) la prima ed ultima proiezione cadano all'interno della finestra di validità della KDM e (3) ci sia una corrispondenza tra il titolo del contenuto cifrato e quello del film.
 						Per quest'ultima verifica il programma scarica da Wikipedia e IMDB il titolo originale del film perchè spesso il nome del film viene riportato all'interno del nome del DCP in lingua originale, mentre il nostro sito presenta sempre il titolo tradotto in italiano.
-						Ad esempio, come si vede nell'immagine, il titolo del DCP sbloccato dalla KDM per il film <i>"Il Grande Gigante Gentile"</i> contiene <i>BFG</i> e infatti il titolo originale del film è <i>"The BFG"</i>. 
+						Ad esempio, come si vede nell'immagine, il titolo del DCP sbloccato dalla KDM per il film <i>"Il Grande Gigante Gentile"</i> contiene <i>BFG</i> e il titolo originale del film è proprio <i>"The BFG"</i>. 
 						Se tutti i controlli hanno esito positivo, la KDM è pronta per essere ingestata nel TMS. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Nascondi dettagli]</a>
                     </span>
                 </p>
@@ -107,12 +107,12 @@
 					In teoria il documento tecnico fornito insieme all'hard disk potrebbe contenere un suggerimento sul momento migliore per inserire l'intervallo, ma nella pratica questo accade raramente.
 					<img src="imgs/interval_finder.png" class="TextWrapRX" alt="Interval finder" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
                     Per alcune ragioni pratiche (ad esempio per poter riutilizzare parti di un DCP o per trasferire un DCP usando un supporto con limiti sulla dimensione dei file) un DCP potrebbe essere giá suddiviso in sottosezioni, chiamate rulli (<i>reels</i>), che solitamente iniziano con un cambio scena (caratteristica comune ai vecchi rulli della pellicola).
-					Ho sviluppato un tool (<b>Interval Finder</b>) per estrarre le informazioni sui rulli dai DCP e fornire automaticamente un suggerimento sulla migliore tempistica per l'intervallo.<br>
+					Ho sviluppato un tool (<b>DCP Interval Finder</b>) per estrarre le informazioni sui rulli dai DCP e fornire automaticamente un suggerimento sulla migliore tempistica per l'intervallo.<br>
                     <a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Mostra più dettagli]</a>
                     <span style="display: none;">
 						Il tool é implementato in Python e dev'essere eseguito sul <i>TMS server</i> per poter aver accesso ai file XML dei DCP ingestati.
 						Analizzando i file XML il tool estrae tutte le informazioni sui rulli e suggerisce come miglior tempo per l'intervallo l'istante di inizio del rullo piú vicino alla metá esatta del film.
-						Questi tempo puó infine essere utilizzate per configurare gli automatismi del TSM (pausa della riproduzione e accensione luci in sala) durante la creazione della playlist.
+						Questo tempo puó infine essere utilizzato per configurare gli automatismi del TSM (la pausa della riproduzione e l'accensione delle luci in sala) durante la creazione della playlist.
 						<a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Nascondi dettagli]</a>
                     </span>
                 </p>
@@ -127,7 +127,7 @@
 					Ho sviluppato un tool (<b>Ticket Office Display</b>) per calcolare questa informazione direttamente dal TMS e mostrarla in cassa su un grande schermo.
                     <a style="cursor: pointer;" onclick="$(this).hide(); $(this).parent().next().show()"><br>[Mostra più dettagli]</a>
                     <div style="display: none;"> Tre sorgenti di incertezza ci impediscono di sommare semplicemente la durata del film T<sub>len</sub> all'inizio del film da programma T<sub>sched</sub>.
-					Prima di tutto, a seconda della quantitá di persone in fila in cassa, l'inizio della proiezione potrebbe essere leggermente ritardato.
+					Prima di tutto, a seconda del numero di persone in fila in cassa, l'inizio della proiezione potrebbe essere leggermente ritardato.
 					In secondo luogo, i trailer mostrati prima del film (seguiti a volte da una breve introduzione di un critico), posticipano ulteriormente l'inizio del film.
 					Infine, l'intervallo in mezzo al film ha una durata variabile a seconda della fila al bar che dipende a sua volta dall'orario della proiezione (diversi spettacoli sono rivolti a diversi tipi di spettatori e con diversa affluenza).<br>
 					Ho sviluppato un sistema per fornire tre diverse stime sul termine della proiezione con un livello di accuratezza crescente.
@@ -135,11 +135,11 @@
 					<center><img src="imgs/orario_cassa_schema.png" style="width: 75%; cursor: zoom-in" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)"></center>
 					<i><b>Prima stima:</b></i> questa misura, mostrata prima dell'inizio del film fino a 20 minuti dopo l'orario di inizio previsto, é ottenuta a partire dall'orario di inizio previsto sommando la durata del film (ricavata dal nostro sito web) e la durata media dell'intervallo per il particolare orario della proiezione (ad es. sabato sera o domenica pomeriggio).
 					<br><i><b>Seconda stima:</b></i> ogni notte un <i>cron</i> job in esecuzione sul Raspberry PI scarica dal nostro sito web le proiezioni previste per la giornata e programma il lancio dello script di back-end 20 minuti dopo l'inizio previsto per la proiezione.
-					A quel punto possiamo essere certi che sia i trailer che l'introduzione del critico sono conclusi e possiamo quindi calcolare il vero inizio della proiezione.
+					A quel punto possiamo essere certi che sia i trailer che l'introduzione del critico siano conclusi e possiamo quindi calcolare il vero inizio della proiezione.
 					Il problema é che il nostro TMS non fornisce alcuna interfaccia per leggere il timestamp del contenuto in riproduzione.
 					Lo script quindi estrae questa informazione connettendosi al TMS via VNC, facendo uno screenshot della GUI del TMS, ritagliando l'immagine e applicando infine una tecnica di Optical Character Recognition (OCR) tramite <i>tesseract-ocr</i>.
 					Dal timestamp letto possiamo quindi ricostruire l'inizio effettivo della proiezione e fornire una miglior stima del termine della proiezione.
-					<br><i><b>Terza stima:</b></i> a partire dall'inizio previsto per la proiezione, il sistema attenda che sia trascorso il 75% della durate del film ed estrae nuovamente il timestamp come al passo precedente.
+					<br><i><b>Terza stima:</b></i> a partire dall'inizio previsto per la proiezione, il sistema attenda che sia trascorso il 75% della durata del film ed estrae nuovamente il timestamp come al passo precedente.
 					A questo punto il sistema conosce anche la durata esatta dell'intervallo ed é in grado di compensarne l'effetto per fornire la stima finale del termine della proiezione.
 					<br> NB la durata dell'intervallo estratta nell'ultimo passo viene anche utilizzata per aggiornare la durata media dell'intervallo in modo che, man mano che il sistema viene eseguito nel tempo, l'accuratezza delle prime due stime diventi sempre piú affidabile. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $('a').eq($('a').index($(this)) - 1)
 .show()">[Nascondi dettagli]</a>
@@ -150,16 +150,16 @@
 
                 <img src="imgs/idea.png" class="TextWrapLX" />
                 <p>
-					Al termine del film, mentre vengono mostrati i titoli di coda, dobbiamo accendere le luci in sala e quest'ultima operazione puó essere automatizzata direttamente nella playlist del TMS fornendo l'esatto istante temporale.
+					Al termine del film, mentre vengono mostrati i titoli di coda, è necessario accendere le luci in sala e quest'ultima operazione puó essere automatizzata direttamente nella playlist del TMS fornendo l'esatto istante temporale.
 					<img src="imgs/lights2.jpg" class="TextWrapRX" alt="Telegram Bot - CTDB Lights" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 					Questo timestamp, chiamato <i>Credits Offset</i>, viene talvolta riportato nel documento fornito insieme all'hard disk, ma non sempre questo succede.
-					Ho sviluppato un tool (<b>CTDB Lights</b>) per accendere e spegnere manualmente, anche da remoto, le luci di sala utilizzato le porte GPIO sul Raspberry PI implementando un sistema complementare alle porte GPIO del TMS.<br>
+					Ho sviluppato un tool (<b>CTDB Lights</b>) per accendere e spegnere manualmente, anche da remoto, le luci di sala utilizzando le porte GPIO sul Raspberry PI implementando un sistema complementare a quello basato sulle porte GPIO del TMS.<br>
                     <a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Mostra più dettagli]</a>
                     <span style="display: none;">
-						Il tool é stato implementato in Python come un server HTTP interfacciato con le porte GPIO tramite il modulo <i>RPi.GPIO</i>.
-						Il servizio CTDB Lights é una web-app accessibile da un qualsiasi computer connesso alla stessa LAN, rendendo il sistema di controllo luci utilizzabile anche durante gli spettacoli teatrali.
-						Ho anche implementato un'applicazione Android che rende il server HTTP accessibile anche al di fuori della LAN tramite SSH local port forwarding usando il Raspberry PI come jump server.
-						Infine, il servizio é anche accessibile direttamente tramite il Telegram Bot. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Nascondi dettagli]</a>
+						Il tool é implementato in Python come server HTTP interfacciato con le porte GPIO tramite il modulo <i>RPi.GPIO</i>.
+						CTDB Lights espone una web app accessibile da un qualsiasi computer connesso alla stessa LAN, rendendo il sistema di controllo luci utilizzabile anche durante gli spettacoli teatrali.
+						Ho anche implementato un'applicazione Android che rende la web app accessibile anche al di fuori della LAN tramite SSH local port forwarding usando il Raspberry PI come jump server.
+						Infine, il servizio é anche direttamente interfacciato al Telegram Bot. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Nascondi dettagli]</a>
                     </span>
                 </p>
 
