@@ -2,7 +2,7 @@
 
 <img src="imgs/film-roll.png" class="TextWrapLX" />
 <p>
-	Digital Cinema Initiatives (DCI) is a consortium of the major Hollywood studios created in the early 2000s which aims at the standardization of Digital Cinema systems.
+	The Digital Cinema Initiatives (DCI) is a consortium of the major Hollywood studios created in the early 2000s which aims at the standardization of Digital Cinema systems.
 	In the latest decade, the traditional 35mm film has been replaced by a Digital Cinema Package (DCP), a collection of files including audio and video tracks together with some metadata files.
 	DCPs are typically delivered to cinemas over satellite links or as physical hard drives. In order to provide security (e.g. to prevent unauthorized playbacks or illegal copies), DCPs are encrypted:
 	each cinema needs a Key Delivery Message (KDM), a special file, provided by the distributor, containing the cryptographic material which enables a specific Theater Management System (TMS) to retrieve the decryption keys for a DCP to play its content in a pre-defined time window.
@@ -13,11 +13,11 @@
 
 <img src="imgs/truck.png" class="TextWrapLX" />
 <p>
-	At the beginning of each week, a courier delivers a set of hard drives containing the DCPs of the movies planned for the weekend. The first step for the creation of the playlist is the ingest, i.e. the copy of all the DCP
-	files into the TMS. Given that each DPC can take a few hundreds of GB, the ingest lasts several hours and it might be useful to verify its status remotely.
+	At the beginning of each week, a courier delivers a set of hard drives containing the DCPs of the movies planned for the weekend. The first step for the creation of the playlist is the <i>ingest</i>, i.e. the copy of all the DCP
+	files into the TMS. Given that each DPC can take a few hundreds of GB, the whole ingest lasts several hours and it might be useful to verify its status remotely.
 	<img src="imgs/bot.jpg" class="TextWrapRX" alt="Telegram Bot" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 
-	The <i>TMS server</i> is not directly connected to the Internet, however it can be reached from a dual-homed computer, <i>PC TR</i>, which we commonly use to handle the KDMs and the trailers. In order to avoid keeping <i>PC TR</i> on H24, the first tool I have developed is a Telegram Bot (<b>CTDB Bot</b>), running on a Raspberry PI, enabling users to remotely check the status of <i>PC TR</i> and to turn it on via Wake-on-LAN (WOL).
+	The <i>TMS server</i> is however not directly connected to the Internet, but can be reached from a dual-homed computer, <i>PC TR</i>, which we commonly use to handle the KDMs and the trailers. In order to avoid keeping <i>PC TR</i> powered on H24, the first tool I have developed is a Telegram Bot (<b>CTDB Bot</b>), running on a Raspberry PI, enabling users to remotely check the status of <i>PC TR</i> and to turn it on via Wake-on-LAN (WOL).
 	At boot, <i>PC TR</i> notifies its successful startup via Telegram so that we can log in via TeamViewer and finally access the <i>TMS server</i> via VNC.<br>
 	<a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Show more details]</a>
 	<span style="display: none;">
@@ -41,10 +41,10 @@
 		At startup, the program retrieves the emails of the latest 7 days via IMAP together with their XML and ZIP attachments and extracts them.
 		It then connects to the database of our cinema’s website to download the information about the latest shows scheduled (their titles and the timings of the first and last shows). It then parses the KDM as XML to extract the following data: the title of the encrypted content, the validity time window and the serial number of the recipient device. It finally automatically checks if (1) our serial number appears in the KDM, (2) the
 		first and latest shows scheduled falls within the validity time window and (3) there’s a match between the title of the encrypted content and the title of the movie. For this last check, the program retrieves the
-		original movie title from Wikipedia and IMDB because often the name of the movie encoded in the DCP filename is reported in its original version, while our website reports the translated title.
-		For example, as reported in the picture, the KDM's content title for the movie <i>"Il Grande Gigante Gentile"</i> contains <i>BFG</i> and indeed the original movie title is <i>"The BFG"</i>. 
+		original movie title from Wikipedia and IMDB because often the name of the movie encoded in the DCP filename is reported in its original version, while our website always reports the translated title.
+		For example, as reported in the picture, the KDM's content title for the movie <i>"Il Grande Gigante Gentile"</i> contains <i>BFG</i> and indeed the original title of the movie is <i>"The BFG"</i>. 
 		If all the checks succeed, we
-		are good to go and the KDM can be ingested into the TMS! <a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Hide details]</a>
+		are good to go and the KDM can be ingested into the TMS. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Hide details]</a>
 	</span>
 </p>
 
@@ -72,7 +72,7 @@
 	The duration of the movie itself does not provide an accurate enough information because of some sources of uncertainty due to the flexible starting time, the trailers and the break.
 	I developed a tool (<b>Ticket Office Display</b>) to compute this information from the TMS and provide it at the ticket office on a big display.
 	<a style="cursor: pointer;" onclick="$(this).hide(); $(this).parent().next().show()"><br>[Show more details]</a>
-	<div style="display: none;">Three sources of uncertainties prevent us to simply add the movie duration T<sub>len</sub> to the scheduled show start time T<sub>sched</sub>.
+	<div style="display: none;">Three sources of uncertainty prevent us to simply add the movie duration T<sub>len</sub> to the scheduled show start time T<sub>sched</sub>.
 	First of all, depending on the queue length at the ticket office, the beginning of the show might be slightly postponed.
 	Second, the set of trailers (sometimes followed by a short introduction by our film critic), further postpone the starting time.
 	Finally, the break in the middle of the movie has a variable length depending on the queue at the bar and on the specific show type (different shows target different types of audience with different levels of attendance).<br>
@@ -92,19 +92,19 @@
 	</div>
 </p>
 
-<h3>After the movie</h3>
+<h3>At the end of the movie</h3>
 
 <img src="imgs/idea.png" class="TextWrapLX" />
 <p>
 	At the very end of the show, during the movie credits, we need to turn on the lights and this last step can be automated as well in the playlist on the TMS by configuring the exact timing information.
 	<img src="imgs/lights2.jpg" class="TextWrapRX" alt="Telegram Bot - CTDB Lights" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 	This timestamp, called <i>Credits Offset</i>, can be sometimes found in the document provided with the hard drive, but this is not always the case.
-	I developed a tool (<b>CTDB Lights</b>) to manually, and even remotely, turn on and off the lights using the GPIO ports on the Raspberry PI as a system complementary to the GPIO ports of the TMS.<br>
+	I developed a tool (<b>CTDB Lights</b>) to manually, and even remotely, turn on and off the lights using the GPIO ports on the Raspberry PI as a system complementary to the one interfaced to the GPIO ports of the TMS.<br>
 	<a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Show more details]</a>
 	<span style="display: none;">
 		The tool has been implemented in Python as an HTTP server interfaced with the GPIO ports using the <i>RPi.GPIO</i> module.
-		The CTDB Lights service is a web-app accessible from any computer connected to the same LAN, making this light control tool useful also during theatre performances.
+		The CTDB Lights service is a web app accessible from any computer connected to the same LAN, making this light control tool useful also during theatre performances.
 		I have also implemented an Android app which makes the HTTP server accessible even outside the LAN through SSH local port forwarding using the Raspberry PI as a jump server.
-		Finally, the service is also accessible directly from the Telegram Bot. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Hide details]</a>
+		Finally, the service is also directly integrated into the Telegram Bot. <a style="cursor: pointer;" onclick="$(this).parent().hide(); $(this).parent().prev().show()">[Hide details]</a>
 	</span>
 </p>
