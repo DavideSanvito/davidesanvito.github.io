@@ -62,7 +62,7 @@
 
                 <h3>Prima della proiezione</h3>
 
-                <img src="imgs/truck.png" class="TextWrapLX" />
+                <img src="imgs/icons/truck.png"/>
                 <p>
 					All'inizio di ogni settimana un corriere recapita un insieme di hard disk contenenti i DCP relativi alle proiezioni previste per il weekend.
 					Il primo passo per la creazione di una playlist è l'<i>ingest</i>, ovvero la copia di tutti i DCP dagli hard disk al TMS.
@@ -79,11 +79,11 @@
                     </span>
                 </p>
 
-                <img src="imgs/key.png" class="TextWrapLX" />
+                <img src="imgs/icons/key.png"/>
                 <p>
 					Qualche giorno prima della prima proiezione di un film, il distributore invia le KDM via email.
 					Ogni KDM viene ingestata nel <i>TMS server</i> per sbloccare il film corrispondente e abilitare la riproduzione della playlist.
-                    <img src="imgs/KDM_check.PNG" class="TextWrapRX" alt="KDM Validator" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+                    <img src="imgs/KDM_check.PNG" class="TextWrapLX" alt="KDM Validator" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 					Potrebbe succedere che una KDM contenga informazioni parzialmente errate.
 					Dato che solo il distributore è in grado di fornire la nuova KDM, è molto importante poter verificarne le informazioni rapidamente. 
 					Ho sviluppato un tool (<b>KDM Validator</b>), eseguibile da <i>PC TR</i>, per automatizzare il processo di verifica.<br>
@@ -100,7 +100,7 @@
                     </span>
                 </p>
 
-                <img src="imgs/popcorn.png" class="TextWrapLX" />
+                <img src="imgs/icons/popcorn.png"/>
                 <p>
 					Prima dell'era del cinema digitale, specialmente nei cinema più piccoli, la proiezione del film veniva spesso interrotta a metà da un intervallo per permettere al proiezionista di cambiare la bobina della pellicola caricando sulla macchina da proiezione il secondo tempo.
 					Al giorno d'oggi diversi cinema hanno mantenuto questa pratica per permettere ancora agli spettatori di fare una breve pausa e accedere al bar.
@@ -119,10 +119,10 @@
 				
                 <h3>Durante la proiezione</h3>
 
-                <img src="imgs/clock.png" class="TextWrapLX" />
+                <img src="imgs/icons/clock.png"/>
                 <p>
 					Prima dell'inizio della proiezione potrebbe essere utile mostrare agli spettatori (e specialmente ai loro genitori!) una stima dell'orario di termine della proiezione.
-                    <img src="imgs/orario_cassa.png" class="TextWrapRX" alt="Ticket Office Display" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+                    <img src="imgs/orario_cassa.png" class="TextWrapLX" alt="Ticket Office Display" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 					La durata stessa del film non fornisce un'informazione sufficiente a causa di diverse incertezze sull'inizio della proiezione e sulle durate dei trailer e dell'intervallo.
 					Ho sviluppato un tool (<b>Ticket Office Display</b>) per calcolare questa informazione direttamente dal TMS e mostrarla in cassa su un grande schermo.
                     <a style="cursor: pointer;" onclick="$(this).hide(); $(this).parent().next().show()"><br>[Mostra più dettagli]</a>
@@ -148,7 +148,7 @@
 				
                 <h3>Al termine della proiezione</h3>
 
-                <img src="imgs/idea.png" class="TextWrapLX" />
+                <img src="imgs/icons/light.png"/>
                 <p>
 					Al termine del film, mentre vengono mostrati i titoli di coda, è necessario accendere le luci in sala e quest'ultima operazione puó essere automatizzata direttamente nella playlist del TMS fornendo l'esatto istante temporale.
 					<img src="imgs/lights2.jpg" class="TextWrapRX" alt="Telegram Bot - CTDB Lights" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />

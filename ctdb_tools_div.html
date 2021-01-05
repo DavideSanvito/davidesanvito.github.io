@@ -1,6 +1,6 @@
 <h3>Digital Cinema</h3>
 
-<img src="imgs/film-roll.png" class="TextWrapLX" />
+<img src="imgs/film-roll.png" class="TextWrapLXCinema" />
 <p>
 	The Digital Cinema Initiatives (DCI) is a consortium of the major Hollywood studios created in the early 2000s which aims at the standardization of Digital Cinema systems.
 	In the latest decade, the traditional 35mm film has been replaced by a Digital Cinema Package (DCP), a collection of files including audio and video tracks together with some metadata files.
@@ -11,7 +11,7 @@
 
 <h3>Before the movie</h3>
 
-<img src="imgs/truck.png" class="TextWrapLX" />
+<img src="imgs/icons/truck.png"/>
 <p>
 	At the beginning of each week, a courier delivers a set of hard drives containing the DCPs of the movies planned for the weekend. The first step for the creation of the playlist is the <i>ingest</i>, i.e. the copy of all the DCP
 	files into the TMS. Given that each DPC can take a few hundreds of GB, the whole ingest lasts several hours and it might be useful to verify its status remotely.
@@ -27,11 +27,11 @@
 	</span>
 </p>
 
-<img src="imgs/key.png" class="TextWrapLX" />
+<img src="imgs/icons/key.png"/>
 <p>
 	Few days before the show, the distributor provides the KDMs by email.
 	Each KDM has to be ingested into the <i>TMS server</i> to unlock the corresponding movie and enable the playback of its playlist.
-	<img src="imgs/KDM_check.PNG" class="TextWrapRX" alt="KDM Validator" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+	<img src="imgs/KDM_check.PNG" class="TextWrapLX" alt="KDM Validator" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 	It might happen that a KDM is partially incorrect.
 	Given that a new KDM can only be issued by the distributor, it is essential to timely verify it.
 	I developed a tool (<b>KDM Validator</b>), running on <i>PC TR</i>, to automate this verification process.<br>
@@ -48,7 +48,7 @@
 	</span>
 </p>
 
-<img src="imgs/popcorn.png" class="TextWrapLX" />
+<img src="imgs/icons/popcorn.png"/>
 <p>
 	Before the Digital Cinema era, the projection of a movie, especially in smaller cinemas, used to be splitted in two parts by an interval (or intermission) whose purpose was to allow projectionists to change out film reels. Nowadays several cinemas preserved this practice to
 	let the audience have a short break and access the snack bar. In principle the information about the suggested break time might be reported in the techcnical document provided with the hard drive, but this rarely happens in practice.
@@ -65,10 +65,10 @@
 
 <h3>During the movie</h3>
 
-<img src="imgs/clock.png" class="TextWrapLX" />
+<img src="imgs/icons/clock.png"/>
 <p>
 	Before the beginning of the show, it might be useful to provide the audience (and especially their parents!) an estimate of the ending time of the show.
-	<img src="imgs/orario_cassa.png" class="TextWrapRX" alt="Ticket Office Display" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
+	<img src="imgs/orario_cassa.png" class="TextWrapLX" alt="Ticket Office Display" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 	The duration of the movie itself does not provide an accurate enough information because of some sources of uncertainty due to the flexible starting time, the trailers and the break.
 	I developed a tool (<b>Ticket Office Display</b>) to compute this information from the TMS and provide it at the ticket office on a big display.
 	<a style="cursor: pointer;" onclick="$(this).hide(); $(this).parent().next().show()"><br>[Show more details]</a>
@@ -94,7 +94,7 @@
 
 <h3>At the end of the movie</h3>
 
-<img src="imgs/idea.png" class="TextWrapLX" />
+<img src="imgs/icons/light.png"/>
 <p>
 	At the very end of the show, during the movie credits, we need to turn on the lights and this last step can be automated as well in the playlist on the TMS by configuring the exact timing information.
 	<img src="imgs/lights2.jpg" class="TextWrapRX" alt="Telegram Bot - CTDB Lights" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
