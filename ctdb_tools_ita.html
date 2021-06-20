@@ -62,7 +62,7 @@
 
                 <h3>Prima della proiezione</h3>
 
-                <img src="imgs/icons/truck.png"/>
+                <img src="imgs/truck.png"/>
                 <p>
 					All'inizio di ogni settimana un corriere recapita un insieme di hard disk contenenti i DCP relativi alle proiezioni previste per il weekend.
 					Il primo passo per la creazione di una playlist è l'<i>ingest</i>, ovvero la copia di tutti i DCP dagli hard disk al TMS.
@@ -79,7 +79,7 @@
                     </span>
                 </p>
 
-                <img src="imgs/icons/key.png"/>
+                <img src="imgs/key.png"/>
                 <p>
 					Qualche giorno prima della prima proiezione di un film, il distributore invia le KDM via email.
 					Ogni KDM viene ingestata nel <i>TMS server</i> per sbloccare il film corrispondente e abilitare la riproduzione della playlist.
@@ -100,7 +100,7 @@
                     </span>
                 </p>
 
-                <img src="imgs/icons/popcorn.png"/>
+                <img src="imgs/popcorn.png"/>
                 <p>
 					Prima dell'era del cinema digitale, specialmente nei cinema più piccoli, la proiezione del film veniva spesso interrotta a metà da un intervallo per permettere al proiezionista di cambiare la bobina della pellicola caricando sulla macchina da proiezione il secondo tempo.
 					Al giorno d'oggi diversi cinema hanno mantenuto questa pratica per permettere ancora agli spettatori di fare una breve pausa e accedere al bar.
@@ -119,7 +119,7 @@
 				
                 <h3>Durante la proiezione</h3>
 
-                <img src="imgs/icons/clock.png"/>
+                <img src="imgs/clock.png"/>
                 <p>
 					Prima dell'inizio della proiezione potrebbe essere utile mostrare agli spettatori (e specialmente ai loro genitori!) una stima dell'orario di termine della proiezione.
                     <img src="imgs/orario_cassa.png" class="TextWrapLX" alt="Ticket Office Display" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
@@ -148,14 +148,15 @@
 				
                 <h3>Al termine della proiezione</h3>
 
-                <img src="imgs/icons/light.png"/>
+                <img src="imgs/light.png"/>
                 <p>
 					Al termine del film, mentre vengono mostrati i titoli di coda, è necessario accendere le luci in sala e quest'ultima operazione puó essere automatizzata direttamente nella playlist del TMS fornendo l'esatto istante temporale.
 					<img src="imgs/lights2.jpg" class="TextWrapRX" alt="Telegram Bot - CTDB Lights" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 					Questo timestamp, chiamato <i>Credits Offset</i>, viene talvolta riportato nel documento fornito insieme all'hard disk, ma non sempre questo succede.
-					Ho sviluppato un tool (<b>CTDB Lights</b>) per accendere e spegnere manualmente, anche da remoto, le luci di sala utilizzando le porte GPIO sul Raspberry PI implementando un sistema complementare a quello basato sulle porte GPIO del TMS.<br>
+					Abbiamo sviluppato un tool (<b>CTDB Lights</b>) per accendere e spegnere manualmente, anche da remoto, le luci di sala utilizzando le porte GPIO sul Raspberry PI implementando un sistema complementare a quello basato sulle porte GPIO del TMS.<br>
                     <a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Mostra più dettagli]</a>
                     <span style="display: none;">
+						Mi sono occupato principalmente del lato software del sistema.
 						Il tool é implementato in Python come server HTTP interfacciato con le porte GPIO tramite il modulo <i>RPi.GPIO</i>.
 						CTDB Lights espone una web app accessibile da un qualsiasi computer connesso alla stessa LAN, rendendo il sistema di controllo luci utilizzabile anche durante gli spettacoli teatrali.
 						Ho anche implementato un'applicazione Android che rende la web app accessibile anche al di fuori della LAN tramite SSH local port forwarding usando il Raspberry PI come jump server.

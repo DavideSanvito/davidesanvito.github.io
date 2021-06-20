@@ -65,7 +65,7 @@
 
 				<h3>Before the movie</h3>
 
-				<img src="imgs/icons/truck.png"/>
+				<img src="imgs/truck.png"/>
 				<p>
 					At the beginning of each week, a courier delivers a set of hard drives containing the DCPs of the movies planned for the weekend. The first step for the creation of the playlist is the <i>ingest</i>, i.e. the copy of all the DCP
 					files into the TMS. Given that each DPC can take a few hundreds of GB, the whole ingest lasts several hours and it might be useful to verify its status remotely.
@@ -81,7 +81,7 @@
 					</span>
 				</p>
 
-				<img src="imgs/icons/key.png"/>
+				<img src="imgs/key.png"/>
 				<p>
 					Few days before the show, the distributor provides the KDMs by email.
 					Each KDM has to be ingested into the <i>TMS server</i> to unlock the corresponding movie and enable the playback of its playlist.
@@ -102,7 +102,7 @@
 					</span>
 				</p>
 
-				<img src="imgs/icons/popcorn.png"/>
+				<img src="imgs/popcorn.png"/>
 				<p>
 					Before the Digital Cinema era, the projection of a movie, especially in smaller cinemas, used to be splitted in two parts by an interval (or intermission) whose purpose was to allow projectionists to change out film reels. Nowadays several cinemas preserved this practice to
 					let the audience have a short break and access the snack bar. In principle the information about the suggested break time might be reported in the techcnical document provided with the hard drive, but this rarely happens in practice.
@@ -119,7 +119,7 @@
 
 				<h3>During the movie</h3>
 
-				<img src="imgs/icons/clock.png"/>
+				<img src="imgs/clock.png"/>
 				<p>
 					Before the beginning of the show, it might be useful to provide the audience (and especially their parents!) an estimate of the ending time of the show.
 					<img src="imgs/orario_cassa.png" class="TextWrapLX" alt="Ticket Office Display" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
@@ -148,14 +148,15 @@
 
 				<h3>At the end of the movie</h3>
 
-				<img src="imgs/icons/light.png"/>
+				<img src="imgs/light.png"/>
 				<p>
 					At the very end of the show, during the movie credits, we need to turn on the lights and this last step can be automated as well in the playlist on the TMS by configuring the exact timing information.
 					<img src="imgs/lights2.jpg" class="TextWrapRX" alt="Telegram Bot - CTDB Lights" style="cursor: zoom-in;" onclick="$('#imgPreview').show(); $('#zoomedImg').attr('src', this.src); $('#zoomedImgCap').html(this.alt)" />
 					This timestamp, called <i>Credits Offset</i>, can be sometimes found in the document provided with the hard drive, but this is not always the case.
-					I developed a tool (<b>CTDB Lights</b>) to manually, and even remotely, turn on and off the lights using the GPIO ports on the Raspberry PI as a system complementary to the one interfaced to the GPIO ports of the TMS.<br>
+					We developed a tool (<b>CTDB Lights</b>) to manually, and even remotely, turn on and off the lights using the GPIO ports on the Raspberry PI as a system complementary to the one interfaced to the GPIO ports of the TMS.<br>
 					<a style="cursor: pointer;" onclick="$(this).hide(); $(this).next().show()">[Show more details]</a>
 					<span style="display: none;">
+						I was mainly involved on the software side of the system.
 						The tool has been implemented in Python as an HTTP server interfaced with the GPIO ports using the <i>RPi.GPIO</i> module.
 						The CTDB Lights service is a web app accessible from any computer connected to the same LAN, making this light control tool useful also during theatre performances.
 						I have also implemented an Android app which makes the HTTP server accessible even outside the LAN through SSH local port forwarding using the Raspberry PI as a jump server.
