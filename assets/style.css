@@ -1014,3 +1014,21 @@ screen and (max-width: 480px) {
     height: unset;
   }
 }
+
+.demo {
+    background-color: #ef476f;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 1px 4px;
+    margin: 5px;
+    font-size: 11px;
+}
+
+.talk {
+    background-color: #43aa8b;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 1px 4px;
+    margin: 5px;
+    font-size: 11px;
+}
