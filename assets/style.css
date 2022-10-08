@@ -1048,6 +1048,9 @@ screen and (max-width: 480px) {
   display: inline-block;
 }
 
+/* Display tooltips on Desktop */
+@media only screen and (min-width: 600px) {
+
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 240px;
@@ -1076,4 +1079,13 @@ screen and (max-width: 480px) {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+}
+
+/* Hide tooltips on phones */
+@media only screen and (max-width: 600px) {
+.tooltip .tooltiptext {
+  display:none;
+}
 }
