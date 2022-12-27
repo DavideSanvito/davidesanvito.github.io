@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Begin Jekyll SEO tag v2.6.1 -->
+        <title>FootswitchPI - Davide Sanvito</title>
+        <meta name="generator" content="Jekyll v3.9.0" />
+        <meta property="og:title" content="Davide Sanvito" />
+        <meta property="og:locale" content="en_US" />
+        <link rel="canonical" href="https://davidesanvito.github.io/" />
+        <meta property="og:url" content="https://davidesanvito.github.io/" />
+        <meta property="og:site_name" content="Davide Sanvito" />
+        <script async="" src="assets/analytics.js"></script>
+        <script type="application/ld+json">
+            { "@type": "WebSite", "headline": "Short bio", "url": "https://davidesanvito.github.io/", "name": "Davide Sanvito", "@context": "https://schema.org" }
+        </script>
+        <!-- End Jekyll SEO tag -->
+
+        <link rel="stylesheet" href="assets/style.css" />
+        <script src="assets/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+        <script src="assets/main.js"></script>
+	<link href="assets/prism.css" rel="stylesheet" />
+        <!--[if lt IE 9]>
+            <script src="assets/https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    </head>
+    <body style="text-align: justify">
+    <script src="assets/prism.js"></script>
+        <header>
+            <h1>FootswitchPI</h1>
+        </header>
+
+        <div id="banner">
+            <span id="logo"></span>
+        </div>
+
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li class="tag-h2 active"><a href="index.html">Back</a></li>
+                </ul>
+            </nav>
+
+            <section style="height: auto;">
+
+                <p>
+                    In my free time I like playing the piano. The <b>FootswitchPI</b> is a small tool I have built to interface the Raspberry PI with a footswitch, allowing me to read sheet music on a PDF and conveniently move to the next/previous page with my foot.
+                </p>
+                                <center> <img src="imgs/diagram.png" style="max-width: 75%;"/> </center> <br>
+
+
+				<h3>Hardware</h3>
+				<p>
+On the hardware side I used a standard 2-channels footswitch for guitar amplifiers and connected it to the GPIO ports on the Raspberry PI.
+
+The 6.35mm (1/4 inch) stereo jack connector has 3 pins (ground, tip and ring) which I have connected to three <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html" target="_blank">GPIO pins</a> as follows:
+<ul>
+  <li><b>Ground</b> (PHY PIN 14): ground</li>
+  <li><b>GPIO 23</b> (PHY PIN 16): tip</li>
+  <li><b>GPIO 24</b> (PHY PIN 18): ring</li>
+</ul>
+				</p>
+
+				<center> <img src="imgs/photo.jpg" style="max-width: 75%;"/> </center> <br>
+
+                                <h3>Software</h3>
+
+				<p>
+On the software side I selected the following Python modules:
+<ul>
+  <li><a href="https://pypi.org/project/RPi.GPIO/">RPi.GPIO</a>: used to control the GPIO on a Raspberry Pi</li>
+  <li><a href="https://pypi.org/project/pynput/">pynput</a>: used to emulate keyboard press/release events</li>
+</ul>
+I've then configured the PDF reader to render two pages side by side and modified the keyboard shortcuts to a single key press (e.g. 'n' and 'p') to move to the next and previous page, respectively.
+The following code snippet shows how to map an hardware footswitch press to a virtual keyboard press.
+
+				</p>
+
+<pre><code class="language-python">#!/usr/bin/env python3
+
+import RPi.GPIO as GPIO
+import signal
+import Xlib
+
+ch_to_char = {23: 'n', 24: 'p'}
+
+def sigint_handler(signum, frame):
+    GPIO.cleanup()
+    exit()
+
+def btn_callback(ch):
+    if ch in ch_to_char:
+        keyboard.press(ch_to_char[ch])
+        keyboard.release(ch_to_char[ch])
+    print('Btn %d callback: %d' % (ch, GPIO.input(ch)))
+
+if __name__ == "__main__":
+    try:
+        from pynput.keyboard import Key, Controller
+    except Xlib.error.DisplayNameError:
+        print('pynput requires a running X server!')
+        exit()
+
+    signal.signal(signal.SIGINT, sigint_handler)
+    keyboard = Controller()
+
+    GPIO.setmode(GPIO.BCM)
+    for ch in ch_to_char:
+        GPIO.setup(ch, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+        GPIO.add_event_detect(ch, GPIO.BOTH,
+                              callback=btn_callback, bouncetime=500)
+
+    input("Press ENTER to quit\n")
+    GPIO.cleanup()
+</code></pre>
+
+
+            </section>
+            <footer>
+                <p>
+                    <small>Hosted on GitHub Pages.<br>Theme by <a href="https://twitter.com/michigangraham">mattgraham</a>.<br>Icons from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>.</div></small>
+                </p>
+            </footer>
+        </div>
+
+        <div class="modal" id="imgPreview" onclick="$(this).hide()">
+            <span class="close" onclick="$(this).parent().hide()">&times;</span>
+            <img class="modal-content" id="zoomedImg" />
+            <div id="zoomedImgCap"></div>
+        </div>
+
+        <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-170092763-1', 'auto');
+		ga('send', 'pageview');
+        </script>
+    </body>
+</html>
