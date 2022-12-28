@@ -79,7 +79,7 @@ The following code snippet shows how to map an hardware footswitch press to a vi
 
 				</p>
 
-<pre><code class="language-python">#!/usr/bin/env python3
+<pre><code class="language-python" style="font-size: 0.8em">#!/usr/bin/env python3
 
 import RPi.GPIO as GPIO
 import signal
@@ -111,7 +111,8 @@ if __name__ == "__main__":
     for ch in ch_to_char:
         GPIO.setup(ch, GPIO.IN, pull_up_down=GPIO.PUD_UP)
         GPIO.add_event_detect(ch, GPIO.BOTH,
-                              callback=btn_callback, bouncetime=500)
+                              callback=btn_callback,
+                              bouncetime=500)
 
     input("Press ENTER to quit\n")
     GPIO.cleanup()
