@@ -1089,3 +1089,11 @@ screen and (max-width: 480px) {
   display:none;
 }
 }
+
+.pics_in_a_row {
+  display: flex;
+  /* max-width: 75%; */
+}
+
+.img1 { flex: calc(154/347); padding:5px; }
+.img2 { flex: calc(753/347); padding:5px; }

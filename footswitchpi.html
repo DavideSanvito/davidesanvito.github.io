@@ -49,23 +49,31 @@
                 <p>
                     In my free time I like playing the piano. The <b>FootswitchPI</b> is a small tool I have built to interface the Raspberry PI with a footswitch, allowing me to read sheet music on a PDF and conveniently move to the next/previous page with my foot.
                 </p>
-                                <center> <img src="imgs/diagram.png" style="max-width: 75%;"/> </center> <br>
+                                <center> <img src="imgs/diagram.png" style="max-width: 80%;"/> </center> <br>
 
 
 				<h3>Hardware</h3>
 				<p>
 On the hardware side I used a standard 2-channels footswitch for guitar amplifiers and connected it to the GPIO ports on the Raspberry PI.
 
-The 6.35mm (1/4 inch) stereo jack connector has 3 pins (ground, tip and ring) which I have connected to three <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html" target="_blank">GPIO pins</a> as follows:
+The 6.35mm (1/4 inch) stereo jack connector has 3 pins (Tip, Ring and Sleeve) which I have connected to three <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html" target="_blank">GPIO pins</a> as follows:
 <ul>
-  <li><b>Ground</b> (PHY PIN 14): ground</li>
-  <li><b>GPIO 23</b> (PHY PIN 16): tip</li>
-  <li><b>GPIO 24</b> (PHY PIN 18): ring</li>
+  <li><b>GPIO 23</b> (PHY PIN 16): Tip</li>
+  <li><b>GPIO 24</b> (PHY PIN 18): Ring</li>
+  <li><b>Ground</b> (PHY PIN 14): Sleeve</li>
 </ul>
 				</p>
 
-				<center> <img src="imgs/photo.jpg" style="max-width: 75%;"/> </center> <br>
-
+<center>
+ <div class="pics_in_a_row">
+    <div class="img1">
+      <img src="imgs/jack_pinout.png">
+    </div>
+    <div class="img2">
+      <img src="imgs/photo.jpg">
+    </div>
+  </div>
+</center>
                                 <h3>Software</h3>
 
 				<p>
